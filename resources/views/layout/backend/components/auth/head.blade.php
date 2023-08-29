@@ -3,7 +3,7 @@
 <meta name="description" content="Zwork Technology - POS System - Vegtable Shop">
 <meta name="author" content="Zwork Technology">
 
-<title>Zwork Technology - POS - Shop Billing - Custom Software</title>
+<title>Zwork Technology - CMS / POS - Shop Billing - Custom Software</title>
 
 <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/backend/img/logo-small.png') }}">
 

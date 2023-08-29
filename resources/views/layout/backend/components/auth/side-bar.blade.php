@@ -14,7 +14,7 @@
                     <h6 class="submenu-hdr">Sales</h6>
                     <ul>
                         <li class="{{ Route::is('session.index', 'session.store') ? 'active' : '' }}">
-                            <a href="{{ route('session.index') }}"><i data-feather="credit-card"></i><span>Session</span></a>
+                            <a href="{{ route('session.index') }}"><i data-feather="credit-card"></i><span>Brand</span></a>
                         </li>
                         <li class="{{ Route::is('category.index', 'category.store') ? 'active' : '' }}">
                             <a href="{{ route('category.index') }}"><i data-feather="credit-card"></i><span>Category</span></a>
@@ -22,12 +22,12 @@
                         <li class="{{ Route::is('product.index', 'product.store') ? 'active' : '' }}">
                             <a href="{{ route('product.index') }}"><i data-feather="box"></i><span>Product</span></a>
                         </li>
-                        <li class="{{ Route::is('sales.index') ? 'active' : '' }}">
+                        <li class="{{ Route::is('sales.index') ? 'active' : '' }}" hidden>
                             <a href="{{ route('sales.index') }}"><i data-feather="shopping-cart"></i><span>Sales</span></a>
                         </li>
                     </ul>
                 </li>
-                <li class="submenu-open">
+                <li class="submenu-open" hidden>
                     <h6 class="submenu-hdr">General</h6>
                     <ul>
                         <li class="{{ Route::is('bank.index', 'bank.store') ? 'active' : '' }}">
@@ -38,7 +38,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="submenu-open">
+                <li class="submenu-open" hidden>
                     <h6 class="submenu-hdr">Delivery</h6>
                     <ul>
                         <li class="{{ Route::is('delivery.area.index', 'delivery.area.store') ? 'active' : '' }}">
@@ -55,7 +55,7 @@
                 <li class="submenu-open">
                     <h6 class="submenu-hdr">User Management</h6>
                     <ul>
-                        <li class="{{ Route::is('employee.index', 'employee.store', 'employee.edit', 'employee.delete', 'employee.checkduplicate') ? 'active' : '' }}">
+                        <li class="{{ Route::is('employee.index', 'employee.store', 'employee.edit', 'employee.delete', 'employee.checkduplicate') ? 'active' : '' }}" hidden>
                             <a href="{{ route('employee.index') }}"><i data-feather="user"></i><span>Employee</span></a>
                         </li>
                         <li class="{{ Route::is('manager.invite.index', 'manager.invite.store') ? 'active' : '' }}">
