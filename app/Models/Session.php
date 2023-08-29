@@ -12,6 +12,7 @@ class Session extends Model
     protected $fillable = [
         'unique_key',
         'soft_delete',
+        'image',
         'name'
     ];
 

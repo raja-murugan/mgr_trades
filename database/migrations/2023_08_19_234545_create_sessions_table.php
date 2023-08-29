@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('unique_key')->unique();
             $table->boolean('soft_delete')->default(0);
             $table->string('name');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

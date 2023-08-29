@@ -19,6 +19,7 @@
                         <thead>
                             <tr>
                                 <th>Sl. No</th>
+                                <th>Logo</th>
                                 <th>Name</th>
                                 <th>Action</th>
                             </tr>
@@ -27,6 +28,11 @@
                             @foreach ($data as $keydata => $session_data)
                                 <tr>
                                     <td>{{ ++$keydata }}</td>
+                                    @if ($session_data->image == "")
+                                        <td></td>
+                                        @elseif ($session_data->image != "")
+                                        <td><img src="{{ asset('assets/brand/' . $session_data->image) }}" alt="" width="50" height="50"></td>
+                                        @endif
                                     <td>{{ $session_data->name }}</td>
                                     <td>
                                         <ul class="list-unstyled hstack gap-1 mb-0">

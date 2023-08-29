@@ -24,7 +24,15 @@ class SessionController extends Controller
         $data = new Session();
 
         $data->unique_key = $randomkey;
+
         $data->name = $request->get('name');
+
+        if ($request->productimage != "") {
+            $productimage = $request->productimage;
+            $filename_one = $data->name . '_' . $randomkey . '_' . '.' . $productimage->getClientOriginalExtension();
+            $request->productimage->move('assets/brand', $filename_one);
+            $data->image = $filename_one;
+        }
 
         $data->save();
 
@@ -38,6 +46,17 @@ class SessionController extends Controller
         $SessionData = Session::where('unique_key', '=', $unique_key)->first();
 
         $SessionData->name = $request->get('name');
+
+        if ($request->productimage != "") {
+            $productimage = $request->productimage;
+            $filename_one = $SessionData->name . '_' . $unique_key . '_' . '.' . $productimage->getClientOriginalExtension();
+            $request->productimage->move('assets/brand', $filename_one);
+            $SessionData->image = $filename_one;
+        } else {
+            $Insertedproof_image_one = $SessionData->image;
+            $SessionData->image = $Insertedproof_image_one;
+        }
+
         $SessionData->update();
 
         return redirect()->route('session.index')->with('info', 'Updated !');

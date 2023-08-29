@@ -4,13 +4,22 @@
             <h5 class="modal-title" id="myExtraLargeModalLabel">Update</h5>
         </div>
         <div class="modal-body">
-            <form autocomplete="off" method="POST" action="{{ route('session.edit', ['unique_key' => $session_data->unique_key]) }}">
+            <form autocomplete="off" method="POST" action="{{ route('session.edit', ['unique_key' => $session_data->unique_key]) }}"  enctype="multipart/form-data">
                 @csrf
                 <div class="row">
                     <div class="col-lg-12 col-sm-6 col-12">
                         <div class="form-group">
                             <label>Session Name <span style="color: red;">*</span></label>
                             <input type="text" name="name" placeholder="Enter name" required value="{{ $session_data->name }}">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="form-group">
+                            <label>Image<span style="color: red;">*</span></label>
+                            <input type="file" id="" class="form-control" name="productimage"><br/><br/>
+                            @if ($session_data->image != "")
+                            <img src="{{ asset('assets/brand/' .$session_data->image) }}" alt="" width="150" height="100">
+                            @endif
                         </div>
                     </div>
                     <hr>

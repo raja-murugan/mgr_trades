@@ -117,13 +117,13 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     // SESSION CONTROLLER
     Route::middleware(['auth:sanctum', 'verified'])->group(function () {
         // INDEX
-        Route::middleware(['auth:sanctum', 'verified'])->get('/zworktechnology/session', [SessionController::class, 'index'])->name('session.index');
+        Route::middleware(['auth:sanctum', 'verified'])->get('/zworktechnology/brand', [SessionController::class, 'index'])->name('session.index');
         // STORE
-        Route::middleware(['auth:sanctum', 'verified'])->post('/zworktechnology/session/store', [SessionController::class, 'store'])->name('session.store');
+        Route::middleware(['auth:sanctum', 'verified'])->post('/zworktechnology/brand/store', [SessionController::class, 'store'])->name('session.store');
         // EDIT
-        Route::middleware(['auth:sanctum', 'verified'])->post('/zworktechnology/session/edit/{unique_key}', [SessionController::class, 'edit'])->name('session.edit');
+        Route::middleware(['auth:sanctum', 'verified'])->post('/zworktechnology/brand/edit/{unique_key}', [SessionController::class, 'edit'])->name('session.edit');
         // DELETE
-        Route::middleware(['auth:sanctum', 'verified'])->put('/zworktechnology/session/delete/{unique_key}', [SessionController::class, 'delete'])->name('session.delete');
+        Route::middleware(['auth:sanctum', 'verified'])->put('/zworktechnology/brand/delete/{unique_key}', [SessionController::class, 'delete'])->name('session.delete');
     });
     // CATEGORY CONTROLLER
     Route::middleware(['auth:sanctum', 'verified'])->group(function () {
