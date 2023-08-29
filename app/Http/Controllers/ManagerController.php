@@ -50,7 +50,7 @@ class ManagerController extends Controller
 
         Mail::to($request->get('email'))->send(new ManagerMail($data));
 
-        return redirect()->route('manager.invite.index')->with('add', 'Successful invite mail send to user !');
+        return redirect()->route('manager.invite.index')->with('message', 'Mail Sended !');
     }
 
     public function accept($token)
@@ -64,7 +64,7 @@ class ManagerController extends Controller
 
         $user->email = $invite->email;
         $user->name = $invite->name;
-        $user->password = $invite->password;
+        $user->password = Hash::make($invite->password);
 
         $user->save();
 
