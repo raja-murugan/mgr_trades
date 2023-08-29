@@ -16,6 +16,8 @@ class Product extends Model
         'image',
         'note',
         'price',
+        'counter_price',
+        'customer_price',
         'category_id',
         'session_id'
     ];

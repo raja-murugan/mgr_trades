@@ -32,6 +32,8 @@ class ProductController extends Controller
                 'name' => $datas->name,
                 'note' => $datas->note,
                 'price' => $datas->price,
+                'counter_price' => $datas->counter_price,
+                'customer_price' => $datas->customer_price,
                 'image' => $datas->image,
                 'categoryname' => $Categoryid->name,
                 'sessionname' => $sessionid->name,
@@ -56,10 +58,11 @@ class ProductController extends Controller
         $data->name = $request->get('name');
         $data->note = $request->get('note');
         $data->price = $request->get('price');
+        $data->counter_price = $request->get('counter_price');
+        $data->customer_price = $request->get('customer_price');
         $data->category_id = $request->get('category_id');
         $data->session_id = $request->get('session_id');
 
-        
         if ($request->productimage != "") {
             $productimage = $request->productimage;
             $filename_one = $data->name . '_' . $random_no . '_' . '.' . $productimage->getClientOriginalExtension();
@@ -83,6 +86,8 @@ class ProductController extends Controller
         $ProductData->name = $request->get('name');
         $ProductData->note = $request->get('note');
         $ProductData->price = $request->get('price');
+        $ProductData->counter_price = $request->get('counter_price');
+        $ProductData->customer_price = $request->get('customer_price');
         $ProductData->category_id = $request->get('category_id');
         $ProductData->session_id = $request->get('session_id');
 
@@ -119,11 +124,11 @@ class ProductController extends Controller
     public function getcategories()
     {
         $productsession_id = request()->get('productsession_id');
-        
+
         $GetCategory = Category::select('*')
                 ->where('session_id', '=', $productsession_id)
                 ->get();
-            
+
         foreach ($GetCategory as $key => $GetCategories) {
             $output[] = array(
                 'id' => $GetCategories->id,
@@ -149,10 +154,10 @@ class ProductController extends Controller
             $productcategory_id = request()->get('productcategory_id');
 
             $ProductData = Product::where('name', '=', $query)->where('session_id', '=', $productsession_id)->where('category_id', '=', $productcategory_id)->first();
-            
+
             $userData['data'] = $ProductData;
             echo json_encode($userData);
         }
     }
-    
+
 }

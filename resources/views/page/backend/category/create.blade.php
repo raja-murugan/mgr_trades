@@ -1,7 +1,7 @@
 <div class="modal-dialog modal-l">
     <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title" id="myExtraLargeModalLabel">Create Category</h5>
+            <h5 class="modal-title" id="myExtraLargeModalLabel">Create</h5>
         </div>
         <div class="modal-body">
             <form autocomplete="off" method="POST" action="{{ route('category.store') }}" enctype="multipart/form-data">

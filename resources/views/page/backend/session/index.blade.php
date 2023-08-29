@@ -4,7 +4,7 @@
     <div class="content">
         <div class="page-header">
             <div class="page-title">
-                <h4>Session</h4>
+                <h4>Brand</h4>
             </div>
             <div class="page-btn">
                 <button type="button" class="btn btn-primary waves-effect waves-light btn-added" data-bs-toggle="modal"
