@@ -28,6 +28,13 @@ class CategoryController extends Controller
         $data->name = $request->get('name');
         $data->session_id = $request->get('session_id');
 
+        if ($request->productimage != "") {
+            $productimage = $request->productimage;
+            $filename_one = $data->name . '_' . $randomkey . '_' . '.' . $productimage->getClientOriginalExtension();
+            $request->productimage->move('assets/category', $filename_one);
+            $data->image = $filename_one;
+        }
+
         $data->save();
 
 
@@ -41,6 +48,16 @@ class CategoryController extends Controller
 
         $CategoryData->name = $request->get('name');
         $CategoryData->session_id = $request->get('session_id');
+
+        if ($request->productimage != "") {
+            $productimage = $request->productimage;
+            $filename_one = $CategoryData->name . '_' . $unique_key . '_' . '.' . $productimage->getClientOriginalExtension();
+            $request->productimage->move('assets/category', $filename_one);
+            $CategoryData->image = $filename_one;
+        } else {
+            $Insertedproof_image_one = $CategoryData->image;
+            $CategoryData->image = $Insertedproof_image_one;
+        }
 
         $CategoryData->update();
 

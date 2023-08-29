@@ -13,6 +13,7 @@ class Category extends Model
         'unique_key',
         'soft_delete',
         'name',
+        'image',
         'session_id'
     ];
 

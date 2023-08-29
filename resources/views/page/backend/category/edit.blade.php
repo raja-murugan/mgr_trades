@@ -4,7 +4,7 @@
             <h5 class="modal-title" id="myExtraLargeModalLabel">Update</h5>
         </div>
         <div class="modal-body">
-            <form autocomplete="off" method="POST" action="{{ route('category.edit', ['unique_key' => $category_data->unique_key]) }}">
+            <form autocomplete="off" method="POST" action="{{ route('category.edit', ['unique_key' => $category_data->unique_key]) }}" enctype="multipart/form-data">
                 @csrf
                 <div class="row">
                     <div class="col-lg-12 col-sm-6 col-12">
@@ -22,6 +22,15 @@
                                         <option value="{{ $sessions->id }}"@if ($sessions->id === $category_data->session_id) selected='selected' @endif>{{ $sessions->name }}</option>
                                     @endforeach
                                 </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="form-group">
+                            <label>Image<span style="color: red;">*</span></label>
+                            <input type="file" id="" class="form-control" name="productimage"><br/><br/>
+                            @if ($category_data->image != "")
+                            <img src="{{ asset('assets/category/' .$category_data->image) }}" alt="" width="150" height="100">
+                            @endif
                         </div>
                     </div>
                     <hr>
