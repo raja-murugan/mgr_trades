@@ -9,6 +9,7 @@ use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SaleController;
 use Illuminate\Support\Facades\Route;
@@ -23,10 +24,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', [FrontendController::class, 'home'])->name('index.home');
 
-Route::get('/', function () {
-    return view('page.frontend.index');
-});
+Route::get('/about', [FrontendController::class, 'about'])->name('about');
+
+Route::get('/product', [FrontendController::class, 'product'])->name('product');
+
+Route::get('/product/details', [FrontendController::class, 'productdetails'])->name('product.details');
+
+Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
 
 // MANAGER INVITE ACCEPT
 Route::get('/accept/{token}', [ManagerController::class, 'accept']);

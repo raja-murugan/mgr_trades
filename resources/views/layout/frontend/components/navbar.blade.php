@@ -4,22 +4,22 @@
             <div class="main-menu__wrapper-inner">
                 <div class="main-menu__left">
                     <div class="main-menu__logo">
-                        <a href="index.html"><img src="{{ asset('assets/frontend/images/resources/logo-1.png') }}" alt="" width="168"></a>
+                        <a href="{{ route('index.home') }}"><img src="{{ asset('assets/frontend/images/resources/logo-1.png') }}" alt="" width="168"></a>
                     </div>
                     <div class="main-menu__main-menu-box">
                         <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                         <ul class="main-menu__list">
-                            <li>
-                                <a href="index.html">Home</a>
+                            <li class="{{ Route::is('index.home') ? 'active current' : '' }}">
+                                <a href="{{ route('index.home') }}">Home</a>
                             </li>
-                            <li>
-                                <a href="about.html">About Us</a>
+                            <li class="{{ Route::is('about') ? 'active current' : '' }}">
+                                <a href="{{ route('about') }}">About Us</a>
                             </li>
-                            <li>
-                                <a href="about.html">Products</a>
+                            <li class="{{ Route::is('product', 'product.details') ? 'active current' : '' }}">
+                                <a href="{{ route('product') }}">Products</a>
                             </li>
-                            <li>
-                                <a href="contact.html">Contact Us</a>
+                            <li class="{{ Route::is('contact') ? 'active current' : '' }}">
+                                <a href="{{ route('contact') }}">Contact Us</a>
                             </li>
                         </ul>
                     </div>
