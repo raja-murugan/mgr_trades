@@ -11,7 +11,7 @@
 
         {{-- @include('layout.frontend.components.cursor') --}}
 
-        @include('layout.frontend.components.loader')
+        {{-- @include('layout.frontend.components.loader') --}}
 
     <div class="page-wrapper">
 
