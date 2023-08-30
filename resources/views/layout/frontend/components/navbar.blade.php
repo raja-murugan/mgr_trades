@@ -4,7 +4,7 @@
             <div class="main-menu__wrapper-inner">
                 <div class="main-menu__left">
                     <div class="main-menu__logo">
-                        <a href="{{ route('index.home') }}"><img src="{{ asset('assets/frontend/images/resources/logo-1.png') }}" alt="" width="168"></a>
+                        <a href="{{ route('index.home') }}"><img src="{{ asset('assets/frontend/images/resources/logo-1.png') }}" alt="" width="100"></a>
                     </div>
                     <div class="main-menu__main-menu-box">
                         <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
@@ -31,11 +31,11 @@
                                 <span class="icon-telephone"></span>
                             </div>
                             <div class="main-menu__call-number">
-                                <p><a href="tel:18004567890">+ 1800 456 7890</a></p>
+                                <p><a href="tel:+919994023234">+91 99940 23234</a></p>
                             </div>
                         </div>
                         <div class="main-menu__btn-box">
-                            <a href="contact.html" class="thm-btn main-menu__btn">Get quote</a>
+                            <a href="https://api.whatsapp.com/send/?phone=%2B919994023234" target="_blank" class="thm-btn main-menu__btn">Chat With Us</a>
                         </div>
                     </div>
                 </div>

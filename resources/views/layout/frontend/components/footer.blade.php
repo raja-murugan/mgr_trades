@@ -13,8 +13,7 @@
                                 <span class="icon-location"></span>
                             </div>
                             <div class="content">
-                                <h4>54B, Tailstoi Town 5238 MT,</h4>
-                                <p>La city, IA 522364</p>
+                                <h4>48, CKP Garden, Kallanai Road, </h4><p>Thiuverumbur, Tiruchirappalli - 620013</p>
                             </div>
                         </li>
                         <li>
@@ -23,7 +22,7 @@
                             </div>
                             <div class="content">
                                 <h4>Email us :</h4>
-                                <a href="mailto:contact@endreoxinfo.com">contact@endreoxinfo.com</a>
+                                <a href="mailto:info@mgrtrades.com">info@mgrtrades.com</a>
                             </div>
                         </li>
                         <li>
@@ -32,7 +31,7 @@
                             </div>
                             <div class="content">
                                 <h4>Call us on :</h4>
-                                <a href="tel:+18004567890">+ 1800 456 7890</a>
+                                <a href="tel:+919994023234">+91 99940 23234</a>
                             </div>
                         </li>
                     </ul>
@@ -56,11 +55,10 @@
                             <h3 class="footer-widget__title">Useful Links</h3>
                         </div>
                         <ul class="footer-widget__useful-links-list list-unstyled">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="appointment.html">Schedule Appointment</a></li>
-                            <li><a href="testimonials.html">Testimonials</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="{{ route('index.home') }}">Home</a></li>
+                            <li><a href="{{ route('about') }}">About Us</a></li>
+                            <li><a href="{{ route('product') }}">Products</a></li>
+                            <li><a href="{{ route('contact') }}">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -73,8 +71,6 @@
                             <li><a href="electrical-panels.html">Residential</a></li>
                             <li><a href="electricals-service.html">Commercial</a></li>
                             <li><a href="install-ceiling-fan.html">Industrial</a></li>
-                            <li><a href="baseboard-heating.html">Heating & Cooling
-                                </a></li>
                             <li><a href="airconditioning.html">Fuse & Panels</a></li>
                         </ul>
                     </div>
@@ -87,8 +83,7 @@
                         <div class="site-footer__social">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -100,10 +95,10 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="site-footer__bottom-inner">
-                        <p class="site-footer__bottom-text">© Copyright <a href="#">Electrix</a> 2022 . All
+                        <p class="site-footer__bottom-text">© Copyright <a href="https://zworktechnology.com/" target="_blank">Zwork Technology</a> 2023 . All
                             right reserved. </p>
                         <div class="site-footer__bottom-text-two">
-                            <a href="prices.html">Purchase Now</a>
+                            <a href="javascript::void(o);">Satisfaction Forever</a>
                         </div>
                     </div>
                 </div>

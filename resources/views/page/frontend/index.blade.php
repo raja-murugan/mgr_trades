@@ -5,7 +5,7 @@
 <section class="main-slider">
     <div class="main-slider__bg" style="background-image: url(assets/frontend/images/backgrounds/main-slider-bg.jpg);">
     </div>
-    <div class="main-slider__big-text">Electricity</div>
+    <div class="main-slider__big-text">MGRTrade</div>
     <div class="main-slider__wrap">
         <div class="container">
             <div class="main-slider__inner">
@@ -13,7 +13,7 @@
                 <p class="main-slider__text">Our team has a reputation of being <br> knowledgeable, professional
                     and
                     <br> friendly.</p>
-                <a href="appointment.html" class="main-slider__btn thm-btn">Make Appointment</a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B919994023234" target="_blank" class="main-slider__btn thm-btn">Connect Now</a>
                 <div class="main-slider__three-facts">
                     <ul class="list-unstyled main-slider__three-facts-list">
                         <li>
@@ -111,7 +111,7 @@
                             </div>
                             <div class="content">
                                 <h3 class="about-one__title">Call for Service</h3>
-                                <p class="about-one__number"><a href="tel:18004567890">1800 456 7890</a></p>
+                                <p class="about-one__number"><a href="tel:+919994023234">+91 99940 23234</a></p>
                             </div>
                         </div>
                         <div class="about-one__years-box">

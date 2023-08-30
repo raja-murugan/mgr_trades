@@ -3,18 +3,18 @@
 @section('content')
 <!--Page Header Start-->
 <section class="page-header">
-    <div class="page-header-bg" style="background-image: url(assets/images/backgrounds/page-header-bg.png);">
+    <div class="page-header-bg" style="background-image: url(assets/frontend/images/backgrounds/page-header-bg.png);">
     </div>
     <div class="container">
         <div class="page-header__inner">
             <div class="page-header__shape-1 float-bob-y">
                 <img src="{{ asset('assets/frontend/images/shapes/page-header-shape-1.png') }}" alt="">
             </div>
-            <h2>Projects v-2</h2>
+            <h2>Products</h2>
             <ul class="thm-breadcrumb list-unstyled">
                 <li><a href="index.html">Home</a></li>
                 <li><span>/</span></li>
-                <li>Projects V-2</li>
+                <li>Products</li>
             </ul>
         </div>
     </div>
@@ -25,8 +25,7 @@
 <section class="project-page-two">
     <div class="container">
         <div class="section-title text-center">
-            <span class="section-title__tagline">Our Work</span>
-            <h2 class="section-title__title">Our Projects</h2>
+            <h2 class="section-title__title">Our Products</h2>
         </div>
         <div class="row">
             @foreach ($category as $categorys)

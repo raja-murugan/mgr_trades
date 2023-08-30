@@ -3,12 +3,12 @@
 @section('content')
 <!--Page Header Start-->
 <section class="page-header">
-    <div class="page-header-bg" style="background-image: url(assets/images/backgrounds/page-header-bg.png);">
+    <div class="page-header-bg" style="background-image: url(assets/frontend/images/backgrounds/page-header-bg.png);">
     </div>
     <div class="container">
         <div class="page-header__inner">
             <div class="page-header__shape-1 float-bob-y">
-                <img src="assets/images/shapes/page-header-shape-1.png" alt="">
+                <img src="{{ asset('assets/frontend/images/shapes/page-header-shape-1.png') }}" alt="">
             </div>
             <h2>Contact Us</h2>
             <ul class="thm-breadcrumb list-unstyled">
