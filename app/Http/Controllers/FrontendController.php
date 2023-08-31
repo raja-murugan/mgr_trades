@@ -21,21 +21,29 @@ class FrontendController extends Controller
 
     public function product()
     {
-        $brand = Session::where('soft_delete', '!=', 1)->get();
+        $product = Product::where('soft_delete', '!=', 1)->get();
 
-        return view('page.frontend.product', compact('brand'));
+        return view('page.frontend.product', compact('product'));
     }
 
     public function productdetails($id)
     {
+        $brandname = Session::where('id', '=', $id)->get();
         $category = Category::where('soft_delete', '!=', 1)->where('session_id', '=', $id)->get();
         $product = Product::where('soft_delete', '!=', 1)->where('session_id', '=', $id)->get();
 
-        return view('page.frontend.product_details', compact('category', 'product'));
+        return view('page.frontend.product_details', compact('category', 'product', 'brandname'));
     }
 
     public function contact()
     {
         return view('page.frontend.contact');
+    }
+
+    public function brand()
+    {
+        $brand = Session::where('soft_delete', '!=', 1)->get();
+
+        return view('page.frontend.brand', compact('brand'));
     }
 }

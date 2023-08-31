@@ -15,8 +15,11 @@
                             <li class="{{ Route::is('about') ? 'active current' : '' }}">
                                 <a href="{{ route('about') }}">About Us</a>
                             </li>
-                            <li class="{{ Route::is('product', 'product.details') ? 'active current' : '' }}">
+                            <li class="{{ Route::is('product') ? 'active current' : '' }}">
                                 <a href="{{ route('product') }}">Products</a>
+                            </li>
+                            <li class="{{ Route::is('brand', 'product.details') ? 'active current' : '' }}">
+                                <a href="{{ route('brand') }}">Brand</a>
                             </li>
                             <li class="{{ Route::is('contact') ? 'active current' : '' }}">
                                 <a href="{{ route('contact') }}">Contact Us</a>

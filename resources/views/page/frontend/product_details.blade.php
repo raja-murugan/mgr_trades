@@ -26,7 +26,9 @@
     <div class="project-page-one__bg" style="background-image: url(assets/images/backgrounds/project-page-one-bg.jpg);"></div>
     <div class="container">
         <div class="section-title text-center">
-            <h2 class="section-title__title">Product Details</h2>
+            @foreach ($brandname as $brandnames)
+                <h2 class="section-title__title">{{ $brandnames->name }}</h2>
+            @endforeach
         </div>
         <div class="project-one__filter-box">
             <ul class="project-one__filter style1 post-filter list-unstyled clearfix">

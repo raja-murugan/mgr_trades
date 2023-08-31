@@ -6,11 +6,12 @@
             <div class="page-title">
                 <h4>Product</h4>
             </div>
+            @hasrole('Super-Admin')
             <div class="page-btn">
                 <button type="button" class="btn btn-primary waves-effect waves-light btn-added" data-bs-toggle="modal"
                     data-bs-target=".product-modal-xl">Add New</button>
-
             </div>
+            @endhasrole
         </div>
 
         <div class="card">
@@ -27,7 +28,9 @@
                                 <th>Counter Price</th>
                                 <th>Customer Price</th>
                                 <th>MRP Price</th>
+                                @hasrole('Super-Admin')
                                 <th>Action</th>
+                                @endhasrole
                             </tr>
                         </thead>
                         <tbody>
@@ -46,6 +49,7 @@
                                     <td>₹ {{ $Productdatas['counter_price']  }}</td>
                                     <td>₹ {{ $Productdatas['customer_price']  }}</td>
                                     <td>₹ {{ $Productdatas['price']  }}</td>
+                                    @hasrole('Super-Admin')
                                     <td>
                                         <ul class="list-unstyled hstack gap-1 mb-0">
                                             <li>
@@ -62,6 +66,7 @@
                                             </li>
                                         </ul>
                                     </td>
+                                    @endhasrole
                                 </tr>
 
                                 <div class="modal fade productedit-modal-xl{{ $Productdatas['unique_key'] }}"
