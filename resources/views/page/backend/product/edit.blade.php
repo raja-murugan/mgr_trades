@@ -53,7 +53,7 @@
                     <div class="col-lg-6 col-sm-6 col-6">
                         <div class="form-group">
                             <label>Note<span style="color: red;">*</span></label>
-                            <textarea type="text" name="note" placeholder="Enter note" required>{{ $Productdatas['note'] }}</textarea>
+                            <textarea type="text" name="note" placeholder="Enter note" >{{ $Productdatas['note'] }}</textarea>
                         </div>
                     </div>
                     <hr>

@@ -60,7 +60,7 @@
                     <div class="col-lg-6 col-sm-6 col-6" hidden>
                         <div class="form-group">
                             <label>Note<span style="color: red;">*</span></label>
-                            <textarea type="text" name="note" placeholder="Enter note" required value="No"></textarea>
+                            <textarea type="text" name="note" placeholder="Enter note" value="No"></textarea>
                         </div>
                     </div>
 
