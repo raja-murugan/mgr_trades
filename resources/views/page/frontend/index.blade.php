@@ -135,7 +135,7 @@
                 <div class="col-xl-6 col-lg-6">
                     <div class="services-one__left">
                         <div class="section-title text-left">
-                            <span class="section-title__tagline">Service Provide</span>
+                            <span class="section-title__tagline">Brands</span>
                             <h2 class="section-title__title">We Serve All Sectors</h2>
                         </div>
                     </div>
@@ -175,15 +175,15 @@
         }
         }'>
             <!--Services One Single Start-->
+            @foreach ($brand as $brands)
             <div class="item">
                 <div class="services-one__single">
                     <div class="services-one__img-box">
                         <div class="services-one__img">
-                            <img src="{{ asset('assets/frontend/images/services/services-1-1.jpg') }}" alt="">
+                            <img src="{{ asset('assets/brand/' . $brands->image) }}" alt="">
                         </div>
                         <div class="services-one__content">
-                            <h3 class="services-one__title"><a href="electricals-service.html">Residential
-                                    Service<i class="icon-right-arrow"></i></a></h3>
+                            <h3 class="services-one__title"><a href="{{ route('product.details', ['id' => $brands->id]) }}">{{ $brands->name }}<i class="icon-right-arrow"></i></a></h3>
                         </div>
                         <div class="services-one__shape-1">
                             <img src="{{ asset('assets/frontend/images/shapes/services-one-shape-1.png') }}" alt="">
@@ -192,43 +192,7 @@
                     <div class="services-one__shape-2"></div>
                 </div>
             </div>
-            <!--Services One Single End-->
-            <!--Services One Single Start-->
-            <div class="item">
-                <div class="services-one__single">
-                    <div class="services-one__img-box">
-                        <div class="services-one__img">
-                            <img src="{{ asset('assets/frontend/images/services/services-1-2.jpg') }}" alt="">
-                        </div>
-                        <div class="services-one__content">
-                            <h3 class="services-one__title"><a href="electrical-panels.html">Commercial
-                                    Service<i class="icon-right-arrow"></i></a></h3>
-                        </div>
-                        <div class="services-one__shape-1">
-                            <img src="{{ asset('assets/frontend/images/shapes/services-one-shape-1.png') }}" alt="">
-                        </div>
-                    </div>
-                    <div class="services-one__shape-2"></div>
-                </div>
-            </div>
-            <!--Services One Single End-->
-            <!--Services One Single Start-->
-            <div class="item">
-                <div class="services-one__single">
-                    <div class="services-one__img-box">
-                        <div class="services-one__img">
-                            <img src="{{ asset('assets/frontend/images/services/services-1-3.jpg') }}" alt="">
-                        </div>
-                        <div class="services-one__content">
-                            <h3 class="services-one__title"><a href="indoor-lighting.html">Industrial Service<i class="icon-right-arrow"></i></a></h3>
-                        </div>
-                        <div class="services-one__shape-1 services-one__shape-3">
-                            <img src="{{ asset('assets/frontend/images/shapes/services-one-shape-1.png') }}" alt="">
-                        </div>
-                    </div>
-                    <div class="services-one__shape-2"></div>
-                </div>
-            </div>
+            @endforeach
             <!--Services One Single End-->
         </div>
     </div>
