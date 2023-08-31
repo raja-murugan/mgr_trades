@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Product;
 use App\Models\Session;
 use Illuminate\Http\Request;
 
@@ -20,16 +21,17 @@ class FrontendController extends Controller
 
     public function product()
     {
-        $category = Category::where('soft_delete', '!=', 1)->get();
-
-        return view('page.frontend.product', compact('category'));
-    }
-
-    public function productdetails()
-    {
         $brand = Session::where('soft_delete', '!=', 1)->get();
 
-        return view('page.frontend.product_details', compact('brand'));
+        return view('page.frontend.product', compact('brand'));
+    }
+
+    public function productdetails($id)
+    {
+        $category = Category::where('soft_delete', '!=', 1)->where('session_id', '=', $id)->get();
+        $product = Product::where('soft_delete', '!=', 1)->where('session_id', '=', $id)->get();
+
+        return view('page.frontend.product_details', compact('category', 'product'));
     }
 
     public function contact()

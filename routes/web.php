@@ -30,7 +30,7 @@ Route::get('/about', [FrontendController::class, 'about'])->name('about');
 
 Route::get('/product', [FrontendController::class, 'product'])->name('product');
 
-Route::get('/product/details', [FrontendController::class, 'productdetails'])->name('product.details');
+Route::get('/product/details/{id}', [FrontendController::class, 'productdetails'])->name('product.details');
 
 Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
 
