@@ -48,7 +48,9 @@
                                     <h4 class="project-page-two__title"><a
                                             href="{{ route('product.details', ['id' => $brands->id]) }}">{{ $brands->name }}</a>
                                     </h4>
-                                    <p class="project-page-two__sub-title">Office Camera</p>
+                                    <a href="{{ route('product.details', ['id' => $brands->id]) }}">
+                                    <p class="project-page-two__sub-title">Explore More</p>
+                                    </a>
                                 </a>
                             </div>
                         </div>
