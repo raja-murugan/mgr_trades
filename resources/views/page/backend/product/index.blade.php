@@ -9,7 +9,7 @@
             <div class="page-btn">
                 <button type="button" class="btn btn-primary waves-effect waves-light btn-added" data-bs-toggle="modal"
                     data-bs-target=".product-modal-xl">Add New</button>
-                    
+
             </div>
         </div>
 
@@ -20,11 +20,13 @@
                         <thead>
                             <tr>
                                 <th>Sl. No</th>
-                                <th>Product</th>
+                                <th>Brand</th>
                                 <th>Category</th>
-                                <th>Session</th>
+                                <th>Product</th>
                                 <th>Image</th>
-                                <th>Price</th>
+                                <th>Counter Price</th>
+                                <th>Customer Price</th>
+                                <th>MRP Price</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -32,16 +34,18 @@
                             @foreach ($Productdata as $keydata => $Productdatas)
                                 <tr>
                                     <td>{{ ++$keydata }}</td>
-                                    <td>{{ $Productdatas['name'] }}</td>
-                                    <td>{{ $Productdatas['categoryname'] }}</td>
                                     <td>{{ $Productdatas['sessionname']  }}</td>
-                                    
+                                    <td>{{ $Productdatas['categoryname'] }}</td>
+                                    <td>{{ $Productdatas['name'] }}</td>
+
                                         @if ($Productdatas['image'] == "")
                                         <td></td>
                                         @elseif ($Productdatas['image'] != "")
                                         <td><img src="{{ asset('assets/product/' .$Productdatas['image']) }}" alt="" width="50" height="50"></td>
                                         @endif
-                                    <td>{{ $Productdatas['price']  }}</td>
+                                    <td>₹ {{ $Productdatas['counter_price']  }}</td>
+                                    <td>₹ {{ $Productdatas['customer_price']  }}</td>
+                                    <td>₹ {{ $Productdatas['price']  }}</td>
                                     <td>
                                         <ul class="list-unstyled hstack gap-1 mb-0">
                                             <li>
