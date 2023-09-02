@@ -9,10 +9,8 @@
     <div class="main-slider__wrap">
         <div class="container">
             <div class="main-slider__inner">
-                <h3 class="main-slider__title">Best Service for <br> <span>Electricity</span></h3>
-                <p class="main-slider__text">Our team has a reputation of being <br> knowledgeable, professional
-                    and
-                    <br> friendly.</p>
+                <h4 class="main-slider__title">Empowering Your Electrical Needs with <br> <span>Quality and Expertise</span></h4>
+                <p class="main-slider__text">MGR Trades Expertly Powering Connected Solutions.</p>
                 <a href="https://api.whatsapp.com/send/?phone=%2B919994023234" target="_blank" class="main-slider__btn thm-btn">Connect Now</a>
                 <div class="main-slider__three-facts">
                     <ul class="list-unstyled main-slider__three-facts-list">
@@ -59,13 +57,9 @@
                 <div class="about-one__left">
                     <div class="section-title text-left">
                         <span class="section-title__tagline">about company</span>
-                        <h2 class="section-title__title">We are Commited to Provide
-                            Quality endreox Service</h2>
+                        <h2 class="section-title__title">Passion for Excellence, Lighting Up Possibilities</h2>
                     </div>
-                    <p class="about-one__text">Bring to the table win-win survival strategies to ensure
-                        proactive domination. At the end of the day, going forward, a new normal that has
-                        evolved from generation is on the runway heading towards a streamlined cloud solution.
-                        strategies to ensure proactive domination. </p>
+                    <p class="about-one__text">At MGR Trades, we're your trusted source for high-quality electrical equipment. With a commitment to excellence, we serve both businesses and individuals, ensuring they have access to top-notch solutions. Explore our extensive range of products designed to illuminate your world. </p>
                     <div class="about-one__points-box">
                         <ul class="about-one__points-list list-unstyled">
                             <li>
@@ -91,7 +85,7 @@
                                     <span class="icon-comment"></span>
                                 </div>
                                 <div class="about-one__points-text">
-                                    <p>Annual Pass Programs</p>
+                                    <p>Quality Products</p>
                                 </div>
                             </li>
                             <li>
@@ -99,7 +93,7 @@
                                     <span class="icon-comment"></span>
                                 </div>
                                 <div class="about-one__points-text">
-                                    <p>Trained Emploies</p>
+                                    <p>24/7 Service </p>
                                 </div>
                             </li>
                         </ul>
@@ -115,7 +109,7 @@
                             </div>
                         </div>
                         <div class="about-one__years-box">
-                            <h3 class="about-one__years">25</h3>
+                            <h3 class="about-one__years">20</h3>
                             <p class="about-one__years-experience">Years of
                                 Experience</p>
                         </div>
@@ -136,14 +130,14 @@
                     <div class="services-one__left">
                         <div class="section-title text-left">
                             <span class="section-title__tagline">Brands</span>
-                            <h2 class="section-title__title">We Serve All Sectors</h2>
+                            <h2 class="section-title__title">Top Brand Products</h2>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6">
                     <div class="services-one__right">
-                        <p class="services-one__text">Bring to the table win-win survival strategies to ensure
-                            proactive domination. At the end of the day.</p>
+                        <p class="services-one__text">Bringing the top brand product with a most affordable price only in trichy
+                            21 years leading the way in Electrical services.</p>
                     </div>
                 </div>
             </div>
@@ -206,8 +200,9 @@
             <div class="col-xl-4 col-lg-4">
                 <div class="counter-one__left">
                     <div class="counter-one__year-box">
-                        <p class="counter-one__year"><span>25</span>Year</p>
-                        <h3 class="counter-one__year-title">Leading The Way In <span>endreox Projects</span>
+                        <p class="counter-one__year"><span>20+</span>Year</p>
+                        <h3 class="counter-one__year-title">Years of
+                            Experience</span>
                         </h3>
                     </div>
                 </div>
@@ -220,9 +215,8 @@
                                 <span class="icon-home"></span>
                             </div>
                             <div class="counter-one__content-box">
-                                <h3 class="odometer" data-count="450">00</h3><span class="counter-one__letter">+</span>
-                                <p class="counter-one__text">Residential
-                                    <br> Projects</p>
+                                <h3 class="odometer" data-count="05">00</h3><span class="counter-one__letter">+</span>
+                                <p class="counter-one__text">Projects</p>
                             </div>
                         </li>
                         <li class="counter-one__single">
@@ -230,9 +224,8 @@
                                 <span class="icon-office-building"></span>
                             </div>
                             <div class="counter-one__content-box">
-                                <h3 class="odometer" data-count="120">00</h3><span class="counter-one__letter">+</span>
-                                <p class="counter-one__text">Commercial
-                                    <br> Projects</p>
+                                <h3 class="odometer" data-count="20">00</h3><span class="counter-one__letter">+</span>
+                                <p class="counter-one__text">Clients</p>
                             </div>
                         </li>
                         <li class="counter-one__single">
@@ -269,7 +262,7 @@
                                     <span class="icon-reviews"></span>
                                 </div>
                                 <div class="why-choose-one__content-box">
-                                    <h3 class="odometer" data-count="2700">00</h3><span class="why-choose-one__letter">+</span>
+                                    <h3 class="odometer" data-count="700">00</h3><span class="why-choose-one__letter">+</span>
                                     <p class="why-choose-one__count-text">Satisfied
                                         <br>Customers</p>
                                 </div>
@@ -283,19 +276,14 @@
                             <span class="section-title__tagline">Our Professionals</span>
                             <h2 class="section-title__title">Why Choose Us</h2>
                         </div>
-                        <p class="why-choose-one__text">If you need to repair or replace your Plumbing system,
-                            call
-                            today and talk to one of our Plumbing specialists. They’ll answer all your questions
-                            and
-                            arrange an appointment at your convenience. They’ll answer all your questions and
-                            arrange an appointment at your convenience.</p>
+                        <p class="why-choose-one__text">MGR Trades stands out for several compelling reasons. With a seasoned team of professionals, we guarantee top-tier electrical solutions that prioritize quality and reliability. Our dedication to tailoring solutions to your unique needs ensures efficiency and value. Safety is paramount, and we adhere to industry standards. As the exclusive distributor of Sudhakar pipes and fittings in Trichy, we offer a comprehensive range of electrical and plumbing solutions. Choose us for excellence and access to the best products.</p>
                         <ul class="why-choose-one__points list-unstyled">
                             <li>
                                 <div class="icon">
                                     <span class="fa fa-arrow-right"></span>
                                 </div>
                                 <div class="text">
-                                    <p>Use best materials and labor in every project.</p>
+                                    <p>Proven Expertise for Electrical Solutions.</p>
                                 </div>
                             </li>
                             <li>
@@ -303,7 +291,7 @@
                                     <span class="fa fa-arrow-right"></span>
                                 </div>
                                 <div class="text">
-                                    <p>Integrity and honesty from top to bottom.</p>
+                                    <p>Reliability: Consistency You Can Trust.</p>
                                 </div>
                             </li>
                             <li>
@@ -311,7 +299,23 @@
                                     <span class="fa fa-arrow-right"></span>
                                 </div>
                                 <div class="text">
-                                    <p>Affordable and fair prices.</p>
+                                    <p>Customized Efficiency, Value, and Safety.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <span class="fa fa-arrow-right"></span>
+                                </div>
+                                <div class="text">
+                                    <p>Exclusive Sudhakar Products in Trichy.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <span class="fa fa-arrow-right"></span>
+                                </div>
+                                <div class="text">
+                                    <p>Excellence with Premier Product Access.</p>
                                 </div>
                             </li>
                         </ul>
@@ -328,10 +332,8 @@
                             <span class="icon-certificate"></span>
                         </div>
                         <div class="why-choose-one__content">
-                            <h3 class="why-choose-one__title"><a href="about.html">Awarded Company</a></h3>
-                            <p class="why-choose-one__text-2">There are many variations passages <br> of Lorem
-                                Ipsum
-                                available, but the majority have suffered alter.</p>
+                            <h3 class="why-choose-one__title"><a href="about.html">Premium Products</a></h3>
+                            <p class="why-choose-one__text-2">Our commitment to excellence has earned us recognition, setting industry benchmarks for top-quality products.</p>
                         </div>
                     </div>
                 </div>
@@ -343,10 +345,8 @@
                             <span class="icon-technician"></span>
                         </div>
                         <div class="why-choose-one__content">
-                            <h3 class="why-choose-one__title"><a href="team.html">Trained Workers</a></h3>
-                            <p class="why-choose-one__text-2">There are many variations passages <br> of Lorem
-                                Ipsum
-                                available, but the majority have suffered alter.</p>
+                            <h3 class="why-choose-one__title"><a href="team.html">Expertly Sourced</a></h3>
+                            <p class="why-choose-one__text-2"> Our products are curated by skilled professionals with rigorous training, ensuring top quality for every selection.</p>
                         </div>
                     </div>
                 </div>
@@ -358,10 +358,9 @@
                             <span class="icon-flag"></span>
                         </div>
                         <div class="why-choose-one__content">
-                            <h3 class="why-choose-one__title"><a href="about.html">Industry Leader</a></h3>
-                            <p class="why-choose-one__text-2">There are many variations passages <br> of Lorem
-                                Ipsum
-                                available, but the majority have suffered alter.</p>
+                            <h3 class="why-choose-one__title"><a href="about.html">Setting Standards</a></h3>
+                            <p class="why-choose-one__text-2">We lead in innovation and quality, continuously raising the bar and redefining industry standards.
+                            </p>
                         </div>
                     </div>
                 </div>
