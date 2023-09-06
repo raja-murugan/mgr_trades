@@ -32,21 +32,15 @@
                         <h2 class="section-title__title">About Us Our Company Mission & Vision for Long Term
                         </h2>
                     </div>
-                    <p class="about-three__text-1">The passage experienced a surge in popularity during the
-                        1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as
-                        desktop publishers bundled the text with their software. Today it's seen all around the
-                        web; on templates, websites, and stock designs. Use our generator to get your own, or
-                        read on for the authoritative history of lorem ipsum.</p>
-                    <p class="about-three__text-2">About the ubiquitous lorem ipsum passage. The passage is
-                        attributed to an unknown typesetter in the 15th century who is thought to have scrambled
-                        parts plan of roof. <a href="contact.html">Contact us</a> for more information.</p>
+                    <p class="about-three__text-1">MGR TRADES is a leading electrical and plumbing wholesaler dedicated to serving professionals and businesses in the construction and maintenance industries. With a wide range of products and a commitment to customer satisfaction, we have become a trusted partner for countless projects</p>
+                    <p class="about-three__text-2">We specialize in providing high- quality electrical and plumbing supplies at competitive prices. With years of industry experience, we are proud to be your one-stop destination for all your electrical and plumbing needs. <a href="contact.html">Contact us</a> for more information.</p>
                     <ul class="about-three__points list-unstyled">
                         <li>
                             <div class="icon">
                                 <span class="icon-home"></span>
                             </div>
                             <div class="text">
-                                <p>Residential Electrical <br> Solutions</p>
+                                <p>Electrical <br> Solutions</p>
                             </div>
                         </li>
                         <li>
@@ -54,7 +48,7 @@
                                 <span class="icon-building"></span>
                             </div>
                             <div class="text">
-                                <p>Residential Electrical <br> Solutions</p>
+                                <p>Plumbing <br> Solutions</p>
                             </div>
                         </li>
                     </ul>
@@ -65,7 +59,7 @@
                     <div class="about-three__img">
                         <img src="{{ asset('assets/frontend/images/resources/about-three-img-1.jpg') }}" alt="">
                         <div class="about-three__experience">
-                            <h3>30</h3>
+                            <h3>20</h3>
                             <p>Years of <br> experience in <br> this field</p>
                         </div>
                     </div>
@@ -81,9 +75,8 @@
     <div class="container">
         <div class="section-title text-center">
             <span class="section-title__tagline">Our Benefits</span>
-            <h2 class="section-title__title">What is Repairing... Electrical Services For You</h2>
-            <p class="benefits__text-1">Discover how professional Roofer approach repair for your home roof make
-                fix</p>
+            <h2 class="section-title__title">What can you expect from us</h2>
+            <p class="benefits__text-1">Discover how MGR Treads stand alone from the crowd</p>
         </div>
         <div class="row">
             <!--Benefits Single Start-->
@@ -94,9 +87,8 @@
                             <span class="icon-family-insurance"></span>
                         </div>
                         <div class="benefits__content">
-                            <h4 class="benefits__title">Family Tradition <br> Business</h4>
-                            <p class="benefits__text-2">We often find ourselves working side-by-side with home
-                                healthcare providers.</p>
+                            <h4 class="benefits__title">Our Commitment to You</h4>
+                            <p class="benefits__text-2">Reliability, Quality, and Innovation.</p>
                         </div>
                     </div>
                 </div>
@@ -110,9 +102,8 @@
                             <span class="icon-worker"></span>
                         </div>
                         <div class="benefits__content">
-                            <h4 class="benefits__title">Professional Trained <br> Workers</h4>
-                            <p class="benefits__text-2">We often find ourselves working side-by-side with home
-                                healthcare providers.</p>
+                            <h4 class="benefits__title">Discover Our Difference</h4>
+                            <p class="benefits__text-2">Excellence That Sets Us Apart.</p>
                         </div>
                     </div>
                 </div>
@@ -126,9 +117,8 @@
                             <span class="icon-satisfaction"></span>
                         </div>
                         <div class="benefits__content">
-                            <h4 class="benefits__title">Complete Electrical <br> Warranty</h4>
-                            <p class="benefits__text-2">We often find ourselves working side-by-side with home
-                                healthcare providers.</p>
+                            <h4 class="benefits__title">Setting Ourselves Apart</h4>
+                            <p class="benefits__text-2">Unqiue and long losting products.</p>
                         </div>
                     </div>
                 </div>

@@ -9,8 +9,8 @@
     <div class="main-slider__wrap">
         <div class="container">
             <div class="main-slider__inner">
-                <h4 class="main-slider__title">Empowering Your Electrical Needs with <br> <span>Quality and Expertise</span></h4>
-                <p class="main-slider__text">MGR Trades Expertly Powering Connected Solutions.</p>
+                <h4 class="main-slider__title">Welcome to<br> <span>MGR TRADES</span></h4>
+                <p class="main-slider__text">Your Trusted Source for Electrical and Plumbing Supplies.</p>
                 <a href="https://api.whatsapp.com/send/?phone=%2B919994023234" target="_blank" class="main-slider__btn thm-btn">Connect Now</a>
                 <div class="main-slider__three-facts">
                     <ul class="list-unstyled main-slider__three-facts-list">
@@ -59,7 +59,7 @@
                         <span class="section-title__tagline">about company</span>
                         <h2 class="section-title__title">Passion for Excellence, Lighting Up Possibilities</h2>
                     </div>
-                    <p class="about-one__text">At MGR Trades, we're your trusted source for high-quality electrical equipment. With a commitment to excellence, we serve both businesses and individuals, ensuring they have access to top-notch solutions. Explore our extensive range of products designed to illuminate your world. </p>
+                    <p class="about-one__text">At MGR TRADES, we specialize in providing high- quality electrical and plumbing supplies at competitive prices. With years of industry experience, we are proud to be your one-stop destination for all your electrical and plumbing needs.</p>
                     <div class="about-one__points-box">
                         <ul class="about-one__points-list list-unstyled">
                             <li>
@@ -137,7 +137,7 @@
                 <div class="col-xl-6 col-lg-6">
                     <div class="services-one__right">
                         <p class="services-one__text">Bringing the top brand product with a most affordable price only in trichy
-                            21 years leading the way in Electrical services.</p>
+                            20 + years leading the way in Electrical services.</p>
                     </div>
                 </div>
             </div>
@@ -215,8 +215,8 @@
                                 <span class="icon-home"></span>
                             </div>
                             <div class="counter-one__content-box">
-                                <h3 class="odometer" data-count="05">00</h3><span class="counter-one__letter">+</span>
-                                <p class="counter-one__text">Projects</p>
+                                <h3 class="odometer" data-count="55">00</h3><span class="counter-one__letter">+</span>
+                                <p class="counter-one__text">Products</p>
                             </div>
                         </li>
                         <li class="counter-one__single">
@@ -224,7 +224,7 @@
                                 <span class="icon-office-building"></span>
                             </div>
                             <div class="counter-one__content-box">
-                                <h3 class="odometer" data-count="20">00</h3><span class="counter-one__letter">+</span>
+                                <h3 class="odometer" data-count="50">00</h3><span class="counter-one__letter">+</span>
                                 <p class="counter-one__text">Clients</p>
                             </div>
                         </li>
