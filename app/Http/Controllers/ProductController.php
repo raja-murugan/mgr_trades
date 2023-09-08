@@ -65,7 +65,7 @@ class ProductController extends Controller
 
         if ($request->productimage != "") {
             $productimage = $request->productimage;
-            $filename_one = $data->name . '_' . $random_no . '_' . '.' . $productimage->getClientOriginalExtension();
+            $filename_one = $random_no . '.' . $productimage->getClientOriginalExtension();
             $request->productimage->move('assets/product', $filename_one);
             $data->image = $filename_one;
         }
@@ -94,7 +94,7 @@ class ProductController extends Controller
 
         if ($request->productimage != "") {
             $productimage = $request->productimage;
-            $filename_one = $ProductData->name . '_' . $random_no . '_' . '.' . $productimage->getClientOriginalExtension();
+            $filename_one = $random_no . '.' . $productimage->getClientOriginalExtension();
             $request->productimage->move('assets/product', $filename_one);
             $ProductData->image = $filename_one;
         } else {
