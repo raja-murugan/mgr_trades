@@ -14,7 +14,7 @@
                                     <option value="" disabled selected hiddden>Select Session</option>
                                     @foreach ($session as $sessions)
                                         <option value="{{ $sessions->id }}"@if ($sessions->id === $Productdatas['session_id']) selected='selected' @endif>{{ $sessions->name }}</option>
-                                    @endforeach 
+                                    @endforeach
                                 </select>
                         </div>
                     </div>
@@ -37,12 +37,6 @@
                     </div>
                     <div class="col-lg-6 col-sm-6 col-6">
                         <div class="form-group">
-                            <label>Price<span style="color: red;">*</span></label>
-                            <input type="text" name="price" placeholder="Enter Product Price" value="{{ $Productdatas['price'] }}" required>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-6 col-6">
-                        <div class="form-group">
                             <label>Image<span style="color: red;">*</span></label>
                             <input type="file" id="" class="form-control" name="productimage"><br/><br/>
                             @if ($Productdatas['image'] != "")
@@ -50,10 +44,28 @@
                             @endif
                         </div>
                     </div>
-                    <div class="col-lg-6 col-sm-6 col-6">
+                    <div class="col-lg-6 col-sm-6 col-6" hidden>
                         <div class="form-group">
                             <label>Note<span style="color: red;">*</span></label>
                             <textarea type="text" name="note" placeholder="Enter note" >{{ $Productdatas['note'] }}</textarea>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-4">
+                        <div class="form-group">
+                            <label>Counter Price<span style="color: red;">*</span></label>
+                            <input type="text" name="counter_price" placeholder="Enter Product Price" required value="{{ $Productdatas['counter_price'] }}">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-4">
+                        <div class="form-group">
+                            <label>Customer Price<span style="color: red;">*</span></label>
+                            <input type="text" name="customer_price" placeholder="Enter Product Price" required value="{{ $Productdatas['customer_price'] }}">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-4">
+                        <div class="form-group">
+                            <label>MRP Price<span style="color: red;">*</span></label>
+                            <input type="text" name="price" placeholder="Enter Product Price" required value="{{ $Productdatas['price'] }}">
                         </div>
                     </div>
                     <hr>
