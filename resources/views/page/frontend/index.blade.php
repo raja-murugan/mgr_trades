@@ -5,12 +5,12 @@
 <section class="main-slider">
     <div class="main-slider__bg" style="background-image: url(assets/frontend/images/backgrounds/main-slider-bg.jpg);">
     </div>
-    <div class="main-slider__big-text">MGRTrade</div>
+    <div class="main-slider__big-text">MGRTrades</div>
     <div class="main-slider__wrap">
         <div class="container">
             <div class="main-slider__inner">
                 <h4 class="main-slider__title">Welcome to<br> <span>MGR TRADES</span></h4>
-                <p class="main-slider__text">Your Trusted Source for Electrical and Plumbing Supplies.</p>
+                <p class="main-slider__text">Your Trusted Source for Electrical and Plumbing Product.</p>
                 <a href="https://api.whatsapp.com/send/?phone=%2B919994023234" target="_blank" class="main-slider__btn thm-btn">Connect Now</a>
                 <div class="main-slider__three-facts">
                     <ul class="list-unstyled main-slider__three-facts-list">
@@ -109,7 +109,7 @@
                             </div>
                         </div>
                         <div class="about-one__years-box">
-                            <h3 class="about-one__years">20</h3>
+                            <h3 class="about-one__years">20+</h3>
                             <p class="about-one__years-experience">Years of
                                 Experience</p>
                         </div>
@@ -276,7 +276,8 @@
                             <span class="section-title__tagline">Our Professionals</span>
                             <h2 class="section-title__title">Why Choose Us</h2>
                         </div>
-                        <p class="why-choose-one__text">MGR Trades stands out for several compelling reasons. With a seasoned team of professionals, we guarantee top-tier electrical solutions that prioritize quality and reliability. Our dedication to tailoring solutions to your unique needs ensures efficiency and value. Safety is paramount, and we adhere to industry standards. As the exclusive distributor of Sudhakar pipes and fittings in Trichy, we offer a comprehensive range of electrical and plumbing solutions. Choose us for excellence and access to the best products.</p>
+                        <p class="why-choose-one__text">MGR Trades stands out with a seasoned team delivering top-tier, tailored electrical solutions, prioritizing quality, and adhering to safety standards. As the exclusive Sudhakar distributor in Trichy, we offer comprehensive electrical and plumbing solutions.
+                        </p>
                         <ul class="why-choose-one__points list-unstyled">
                             <li>
                                 <div class="icon">
@@ -299,23 +300,7 @@
                                     <span class="fa fa-arrow-right"></span>
                                 </div>
                                 <div class="text">
-                                    <p>Customized Efficiency, Value, and Safety.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <span class="fa fa-arrow-right"></span>
-                                </div>
-                                <div class="text">
                                     <p>Exclusive Sudhakar Products in Trichy.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <span class="fa fa-arrow-right"></span>
-                                </div>
-                                <div class="text">
-                                    <p>Excellence with Premier Product Access.</p>
                                 </div>
                             </li>
                         </ul>

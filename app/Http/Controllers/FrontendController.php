@@ -11,7 +11,7 @@ class FrontendController extends Controller
 {
     public function home()
     {
-        $brand = Session::where('soft_delete', '!=', 1)->get()->random(3);
+        $brand = Session::where('soft_delete', '!=', 1)->get();
 
         return view('page.frontend.index', compact('brand'));
     }

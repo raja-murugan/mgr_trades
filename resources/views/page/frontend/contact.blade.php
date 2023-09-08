@@ -3,13 +3,10 @@
 @section('content')
 <!--Page Header Start-->
 <section class="page-header">
-    <div class="page-header-bg" style="background-image: url(assets/frontend/images/backgrounds/page-header-bg.png);">
+    <div class="page-header-bg" style="background-image: url(assets/frontend/images/backgrounds/page-header-bg-4.png);">
     </div>
     <div class="container">
         <div class="page-header__inner">
-            <div class="page-header__shape-1 float-bob-y">
-                <img src="{{ asset('assets/frontend/images/shapes/page-header-shape-1.png') }}" alt="">
-            </div>
             <h2>Contact Us</h2>
             <ul class="thm-breadcrumb list-unstyled">
                 <li><a href="index.html">Home</a></li>
@@ -61,16 +58,15 @@
                 <div class="contact-page__right">
                     <div class="contact-page__content">
                         <h3 class="contact-page__title">Our Address</h3>
-                        <p class="contact-page__text">Completely synergize resource taxing relationships via
-                            premier niche markets. Professionally cultivate one-to-one customer service.</p>
+                        <p class="contact-page__text">If you have any questions or would like to inquire about our products and services, please don't hesitate to contact us. We're here to help you find the right solutions for your projects.</p>
                         <ul class="list-unstyled contact-page__content-info">
                             <li>
                                 <div class="icon">
                                     <span class="icon-location"></span>
                                 </div>
                                 <div class="content">
-                                    <h4>Phone :</h4>
-                                    <p>54B, Tailstoi Town 5238 MT, La city, IA 5224</p>
+                                    <h4>Address :</h4>
+                                    <p>48, CKP Garden, Kallanai Road, Thiruverumbur, Tiruchirappalli - 620013</p>
                                 </div>
                             </li>
                             <li>
@@ -78,8 +74,8 @@
                                     <span class="icon-telephone"></span>
                                 </div>
                                 <div class="content">
-                                    <h4>Address :</h4>
-                                    <p><a href="tel:18004567890">1800 456 7890 / 1254 897 3654</a></p>
+                                    <h4>Phone :</h4>
+                                    <p><a href="tel:+919994023234">+91 99940 23234</a></p>
                                 </div>
                             </li>
                             <li>
@@ -88,7 +84,7 @@
                                 </div>
                                 <div class="content">
                                     <h4>Email :</h4>
-                                    <p><a href="mailto:contact@electrix.com">contact@electrix.com</a></p>
+                                    <p><a href="mailto:info@mgrtrades.com">info@mgrtrades.com</a></p>
                                 </div>
                             </li>
                         </ul>
