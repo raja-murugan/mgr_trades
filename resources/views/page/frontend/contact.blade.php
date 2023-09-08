@@ -28,26 +28,32 @@
         <div class="row">
             <div class="col-xl-7 col-lg-7">
                 <div class="contact-page__left">
-                    <form action="assets/inc/sendemail.php" class="contact-page__form contact-form-validated" novalidate="novalidate">
+                    <form autocomplete="off" method="POST" action="{{ route('contact.store') }}" enctype="multipart/form-data">
+                        @csrf
                         <div class="row">
                             <div class="col-xl-12">
                                 <div class="contact-page__input-box">
-                                    <input type="text" placeholder="First Name" name="name">
+                                    <input type="text" placeholder="First Name" name="name" required>
                                 </div>
                             </div>
-                            <div class="col-xl-12">
+                            <div class="col-xl-6">
                                 <div class="contact-page__input-box">
-                                    <input type="email" placeholder="Your Email" name="email">
+                                    <input type="text" placeholder="Your Phone Number" name="phone" required>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="contact-page__input-box">
+                                    <input type="email" placeholder="Your Email" name="email" required>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xl-12">
                                 <div class="contact-page__input-box text-message-box">
-                                    <textarea name="message" placeholder="Message"></textarea>
+                                    <textarea name="message" placeholder="Message" required></textarea>
                                 </div>
                                 <div class="contact-page__btn-box">
-                                    <button type="submit" class="thm-btn contact-page__btn">submit now <span class="fas fa-arrow-right"></span></button>
+                                    <button type="submit" class="thm-btn contact-page__btn">Send Mail Now <span class="fas fa-arrow-right"></span></button>
                                 </div>
                             </div>
                         </div>

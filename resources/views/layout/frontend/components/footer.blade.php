@@ -80,9 +80,9 @@
                             <a href="index.html"><img src="{{ asset('assets/frontend/images/resources/footer-logo.png') }}" alt="" width="168"></a>
                         </div>
                         <div class="site-footer__social">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/mgrtrades2020" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            {{-- <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a> --}}
+                            <a href="https://www.instagram.com/mgrtrades2020/" target="_blank"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>

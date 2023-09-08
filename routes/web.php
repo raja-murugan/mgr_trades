@@ -9,6 +9,7 @@ use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ContactusController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SaleController;
@@ -35,6 +36,8 @@ Route::get('/brand', [FrontendController::class, 'brand'])->name('brand');
 Route::get('/product/details/{id}', [FrontendController::class, 'productdetails'])->name('product.details');
 
 Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
+
+Route::post('/contact/store', [ContactusController::class, 'store'])->name('contact.store');
 
 // MANAGER INVITE ACCEPT
 Route::get('/accept/{token}', [ManagerController::class, 'accept']);
