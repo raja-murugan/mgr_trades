@@ -38,7 +38,7 @@
                     <img src="{{ asset('assets/frontend/images/shapes/main-slider-shape-1.png') }}" alt="">
                 </div>
                 <div class="main-slider__shape-2 float-bob-x">
-                    <img src="{{ asset('assets/frontend/images/shapes/main-slider-shape-2.png') }}" alt="">
+                    {{-- <img src="{{ asset('assets/frontend/images/shapes/main-slider-shape-2.png') }}" alt=""> --}}
                 </div>
             </div>
         </div>
