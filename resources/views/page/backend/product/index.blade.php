@@ -21,10 +21,8 @@
                         <thead>
                             <tr>
                                 <th>Sl. No</th>
-                                <th>Brand</th>
-                                <th>Category</th>
                                 <th>Product</th>
-                                <th>Image</th>
+                                <th>Variant</th>
                                 <th>Counter Price</th>
                                 <th>Customer Price</th>
                                 <th>MRP Price</th>
@@ -34,34 +32,27 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($Productdata as $keydata => $Productdatas)
+                            @foreach ($data as $keydata => $datadatadatas)
                                 <tr>
                                     <td>{{ ++$keydata }}</td>
-                                    <td>{{ $Productdatas['sessionname']  }}</td>
-                                    <td>{{ $Productdatas['categoryname'] }}</td>
-                                    <td>{{ $Productdatas['name'] }}</td>
-
-                                        @if ($Productdatas['image'] == "")
-                                        <td></td>
-                                        @elseif ($Productdatas['image'] != "")
-                                        <td><img src="{{ asset('assets/product/' .$Productdatas['image']) }}" alt="" width="50" height="50"></td>
-                                        @endif
-                                    <td>₹ {{ $Productdatas['counter_price']  }}</td>
-                                    <td>₹ {{ $Productdatas['customer_price']  }}</td>
-                                    <td>₹ {{ $Productdatas['price']  }}</td>
+                                    <td>{{ $datadatadatas->subcategory_id }}</td>
+                                    <td>{{ $datadatadatas->name }}</td>
+                                    <td>₹ {{ $datadatadatas->counter_price }}</td>
+                                    <td>₹ {{ $datadatadatas->customer_price }}</td>
+                                    <td>₹ {{ $datadatadatas->price }}</td>
                                     @hasrole('Super-Admin')
                                     <td>
                                         <ul class="list-unstyled hstack gap-1 mb-0">
                                             <li>
-                                                <a href="#edit{{ $Productdatas['unique_key'] }}" data-bs-toggle="modal"
-                                                    data-id="{{ $Productdatas['unique_key'] }}"
-                                                    data-bs-target=".productedit-modal-xl{{ $Productdatas['unique_key'] }}"
+                                                <a href="#edit{{ $datadatadatas->unique_key }}" data-bs-toggle="modal"
+                                                    data-id="{{ $datadatadatas->unique_key }}"
+                                                    data-bs-target=".productedit-modal-xl{{ $datadatadatas->unique_key }}"
                                                     class="badges bg-lightgrey" style="color: white">Edit</a>
                                             </li>
                                             <li>
-                                                <a href="#delete{{ $Productdatas['unique_key'] }}" data-bs-toggle="modal"
-                                                    data-id="{{ $Productdatas['unique_key'] }}"
-                                                    data-bs-target=".productedelete-modal-xl{{ $Productdatas['unique_key'] }}"
+                                                <a href="#delete{{ $datadatadatas->unique_key }}" data-bs-toggle="modal"
+                                                    data-id="{{ $datadatadatas->unique_key }}"
+                                                    data-bs-target=".productedelete-modal-xl{{ $datadatadatas->unique_key }}"
                                                     class="badges bg-lightyellow" style="color: white">Delete</a>
                                             </li>
                                         </ul>
@@ -69,15 +60,15 @@
                                     @endhasrole
                                 </tr>
 
-                                <div class="modal fade productedit-modal-xl{{ $Productdatas['unique_key'] }}"
+                                <div class="modal fade productedit-modal-xl{{ $datadatadatas->unique_key }}"
                                     tabindex="-1" role="dialog" data-bs-backdrop="static"
-                                    aria-labelledby="editLargeModalLabel{{ $Productdatas['unique_key'] }}"
+                                    aria-labelledby="editLargeModalLabel{{ $datadatadatas->unique_key }}"
                                     aria-hidden="true">
                                     @include('page.backend.product.edit')
                                 </div>
-                                <div class="modal fade productedelete-modal-xl{{ $Productdatas['unique_key'] }}"
+                                <div class="modal fade productedelete-modal-xl{{ $datadatadatas->unique_key }}"
                                     tabindex="-1" role="dialog"data-bs-backdrop="static"
-                                    aria-labelledby="deleteLargeModalLabel{{ $Productdatas['unique_key'] }}"
+                                    aria-labelledby="deleteLargeModalLabel{{ $datadatadatas->unique_key }}"
                                     aria-hidden="true">
                                     @include('page.backend.product.delete')
                                 </div>

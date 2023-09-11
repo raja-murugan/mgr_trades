@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('unique_key')->unique();
             $table->boolean('soft_delete')->default(0);
-            $table->string('name');
+            $table->string('name')->nullable();
             $table->string('image')->nullable();
             $table->string('note')->nullable();
             $table->string('price');

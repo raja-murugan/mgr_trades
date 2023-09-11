@@ -4,68 +4,42 @@
             <h5 class="modal-title" id="myExtraLargeModalLabel">Update</h5>
         </div>
         <div class="modal-body">
-            <form autocomplete="off" method="POST" action="{{ route('product.edit', ['unique_key' => $Productdatas['unique_key']]) }}" enctype="multipart/form-data">
+            <form autocomplete="off" method="POST" action="{{ route('product.edit', ['unique_key' => $datadatadatas->unique_key]) }}" enctype="multipart/form-data">
                 @csrf
                 <div class="row">
-                     <div class="col-lg-6 col-sm-6 col-6">
+                     <div class="col-lg-12 col-sm-12 col-12">
                         <div class="form-group">
-                            <label>Session <span style="color: red;">*</span></label>
-                              <select class="form-control  select productsession_id" name="session_id" id="session_id" required>
-                                    <option value="" disabled selected hiddden>Select Session</option>
-                                    @foreach ($session as $sessions)
-                                        <option value="{{ $sessions->id }}"@if ($sessions->id === $Productdatas['session_id']) selected='selected' @endif>{{ $sessions->name }}</option>
+                            <label>Product <span style="color: red;">*</span></label>
+                              <select class="form-control  select productsession_id" name="subcategory_id" id="subcategory_id" required>
+                                    <option value="" disabled selected hiddden>Select Product</option>
+                                    @foreach ($subcategory as $subcategorys)
+                                        <option value="{{ $subcategorys->id }}"@if ($subcategorys->id === $datadatadatas->subcategory_id) selected='selected' @endif>{{ $subcategorys->name }}</option>
                                     @endforeach
                                 </select>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-6 col-6">
-                        <div class="form-group">
-                            <label>Category <span style="color: red;">*</span></label>
-                              <select class="form-control  select productcategory_id" name="category_id" id="category_id" required>
-                                    <option value="" disabled selected hiddden>Select Category</option>
-                                    @foreach ($category as $categores)
-                                        <option value="{{ $categores->id }}"@if ($categores->id === $Productdatas['category_id']) selected='selected' @endif>{{ $categores->name }}</option>
-                                    @endforeach
-                                </select>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-6 col-6">
-                        <div class="form-group">
-                            <label>Product Name <span style="color: red;">*</span></label>
-                            <input type="text" name="name" placeholder="Enter Product name" class="product_name" value="{{ $Productdatas['name'] }}" required>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-6 col-6">
-                        <div class="form-group">
-                            <label>Image<span style="color: red;">*</span></label>
-                            <input type="file" id="" class="form-control" name="productimage"><br/><br/>
-                            @if ($Productdatas['image'] != "")
-                            <img src="{{ asset('assets/product/' .$Productdatas['image']) }}" alt="" width="150" height="100">
-                            @endif
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-6 col-6" hidden>
-                        <div class="form-group">
-                            <label>Note<span style="color: red;">*</span></label>
-                            <textarea type="text" name="note" placeholder="Enter note" >{{ $Productdatas['note'] }}</textarea>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-4 col-4">
+                        <div class="form-group">
+                            <label>Name <span style="color: red;">*</span></label>
+                            <input type="text" name="name" placeholder="Enter Product name" class="product_name" required value="{{ $datadatadatas->name }}">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-2">
                         <div class="form-group">
                             <label>Counter Price<span style="color: red;">*</span></label>
-                            <input type="text" name="counter_price" placeholder="Enter Product Price" required value="{{ $Productdatas['counter_price'] }}">
+                            <input type="text" name="counter_price" placeholder="Enter Product Price" required value="{{ $datadatadatas->counter_price }}">
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-4 col-4">
+                    <div class="col-lg-3 col-sm-3 col-3">
                         <div class="form-group">
                             <label>Customer Price<span style="color: red;">*</span></label>
-                            <input type="text" name="customer_price" placeholder="Enter Product Price" required value="{{ $Productdatas['customer_price'] }}">
+                            <input type="text" name="customer_price" placeholder="Enter Product Price" required value="{{ $datadatadatas->customer_price }}">
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-4 col-4">
+                    <div class="col-lg-3 col-sm-3 col-3">
                         <div class="form-group">
                             <label>MRP Price<span style="color: red;">*</span></label>
-                            <input type="text" name="price" placeholder="Enter Product Price" required value="{{ $Productdatas['price'] }}">
+                            <input type="text" name="price" placeholder="Enter Product Price" required value="{{ $datadatadatas->price }}">
                         </div>
                     </div>
                     <hr>

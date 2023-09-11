@@ -6,8 +6,7 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Product;
 use App\Models\Session;
 use App\Models\Category;
-
-
+use App\Models\Subcategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
@@ -21,29 +20,10 @@ class ProductController extends Controller
     public function index()
     {
         $data = Product::where('soft_delete', '!=', 1)->get();
-        $Productdata = [];
-        foreach ($data as $key => $datas) {
-            $Categoryid = Category::findOrFail($datas->category_id);
-            $sessionid = Session::findOrFail($datas->session_id);
-
-            $Productdata[] = array(
-                'id' => $datas->id,
-                'unique_key' => $datas->unique_key,
-                'name' => $datas->name,
-                'note' => $datas->note,
-                'price' => $datas->price,
-                'counter_price' => $datas->counter_price,
-                'customer_price' => $datas->customer_price,
-                'image' => $datas->image,
-                'categoryname' => $Categoryid->name,
-                'sessionname' => $sessionid->name,
-                'session_id' => $datas->session_id,
-                'category_id' => $datas->category_id,
-            );
-        }
         $session = Session::where('soft_delete', '!=', 1)->get();
         $category = Category::where('soft_delete', '!=', 1)->get();
-        return view('page.backend.product.index', compact('Productdata', 'session', 'category'));
+        $subcategory = Subcategory::where('soft_delete', '!=', 1)->get();
+        return view('page.backend.product.index', compact('data', 'session', 'category', 'subcategory'));
     }
 
 
@@ -60,8 +40,9 @@ class ProductController extends Controller
         $data->price = $request->get('price');
         $data->counter_price = $request->get('counter_price');
         $data->customer_price = $request->get('customer_price');
-        $data->category_id = $request->get('category_id');
-        $data->session_id = $request->get('session_id');
+        // $data->category_id = $request->get('category_id');
+        // $data->session_id = $request->get('session_id');
+        $data->subcategory_id = $request->get('subcategory_id');
 
         if ($request->productimage != "") {
             $productimage = $request->productimage;
@@ -89,6 +70,7 @@ class ProductController extends Controller
         $ProductData->counter_price = $request->get('counter_price');
         $ProductData->customer_price = $request->get('customer_price');
         $ProductData->category_id = $request->get('category_id');
+        $ProductData->subcategory_id = $request->get('subcategory_id');
         $ProductData->session_id = $request->get('session_id');
 
 
