@@ -35,7 +35,7 @@
                             @foreach ($data as $keydata => $datadatadatas)
                                 <tr>
                                     <td>{{ ++$keydata }}</td>
-                                    <td>{{ $datadatadatas->subcategory_id }}</td>
+                                    <td>{{ $datadatadatas->subcategory->name }}</td>
                                     <td>{{ $datadatadatas->name }}</td>
                                     <td>₹ {{ $datadatadatas->counter_price }}</td>
                                     <td>₹ {{ $datadatadatas->customer_price }}</td>

@@ -21,4 +21,9 @@ class Category extends Model
     {
         return $this->belongsTo(Session::class, 'session_id');
     }
+
+    public function Subcategory()
+    {
+        return $this->hasMany(Subcategory::class, 'category_id');
+    }
 }

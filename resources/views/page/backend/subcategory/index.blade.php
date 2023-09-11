@@ -39,7 +39,7 @@
                                     <td><img src="{{ asset('assets/subcategory/' . $category_data->image) }}" alt="" width="50" height="50"></td>
                                     @endif
                                     <td>{{ $category_data->name }}</td>
-                                    <td>{{ $category_data->category_id  }}</td>
+                                    <td>{{ $category_data->category->name  }}</td>
                                     <td>
                                         <ul class="list-unstyled hstack gap-1 mb-0">
                                             <li>

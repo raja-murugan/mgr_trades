@@ -16,4 +16,14 @@ class Subcategory extends Model
         'image',
         'category_id'
     ];
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class, 'category_id');
+    }
+
+    public function product()
+    {
+        return $this->hasMany(Product::class, 'subcategory_id');
+    }
 }

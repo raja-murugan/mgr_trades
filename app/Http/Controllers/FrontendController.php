@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\Product;
 use App\Models\Session;
+use App\Models\Subcategory;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
@@ -23,9 +24,12 @@ class FrontendController extends Controller
 
     public function product()
     {
-        $product = Product::where('soft_delete', '!=', 1)->get();
+        $subcategory = Subcategory::where('soft_delete', '!=', 1)->get();
+        foreach ($subcategory as $key => $subcategorys) {
+        $varient = Product::where('subcategory_id', '=', $subcategorys->id)->where('soft_delete', '!=', 1)->get();
+        }
 
-        return view('page.frontend.product', compact('product'));
+        return view('page.frontend.product', compact('subcategory', 'varient'));
     }
 
     public function productdetails($id)

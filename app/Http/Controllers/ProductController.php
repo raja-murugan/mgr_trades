@@ -69,9 +69,9 @@ class ProductController extends Controller
         $ProductData->price = $request->get('price');
         $ProductData->counter_price = $request->get('counter_price');
         $ProductData->customer_price = $request->get('customer_price');
-        $ProductData->category_id = $request->get('category_id');
+        // $ProductData->category_id = $request->get('category_id');
         $ProductData->subcategory_id = $request->get('subcategory_id');
-        $ProductData->session_id = $request->get('session_id');
+        // $ProductData->session_id = $request->get('session_id');
 
 
         if ($request->productimage != "") {
