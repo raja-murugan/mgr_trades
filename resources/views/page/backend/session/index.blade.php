@@ -6,10 +6,12 @@
             <div class="page-title">
                 <h4>Brand</h4>
             </div>
+            @hasrole('Super-Admin')
             <div class="page-btn">
                 <button type="button" class="btn btn-primary waves-effect waves-light btn-added" data-bs-toggle="modal"
                     data-bs-target=".session-modal-xl">Add New</button>
             </div>
+            @endhasrole
         </div>
 
         <div class="card">
@@ -21,7 +23,9 @@
                                 <th>Sl. No</th>
                                 <th>Logo</th>
                                 <th>Name</th>
+                                @hasrole('Super-Admin')
                                 <th>Action</th>
+                                @endhasrole
                             </tr>
                         </thead>
                         <tbody>

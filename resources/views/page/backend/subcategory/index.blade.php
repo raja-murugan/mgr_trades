@@ -4,7 +4,7 @@
     <div class="content">
         <div class="page-header">
             <div class="page-title">
-                <h4>Category</h4>
+                <h4>Product</h4>
             </div>
             @hasrole('Super-Admin')
             <div class="page-btn">
@@ -21,8 +21,9 @@
                         <thead>
                             <tr>
                                 <th>Sl. No</th>
+                                <th>image</th>
                                 <th>Name</th>
-                                <th>Brand</th>
+                                <th>Category</th>
                                 @hasrole('Super-Admin')
                                 <th>Action</th>
                                 @endhasrole
@@ -32,8 +33,13 @@
                             @foreach ($data as $keydata => $category_data)
                                 <tr>
                                     <td>{{ ++$keydata }}</td>
+                                    @if ($category_data->image == "")
+                                    <td></td>
+                                    @elseif ($category_data->image != "")
+                                    <td><img src="{{ asset('assets/subcategory/' . $category_data->image) }}" alt="" width="50" height="50"></td>
+                                    @endif
                                     <td>{{ $category_data->name }}</td>
-                                    <td>{{ $category_data->session->name  }}</td>
+                                    <td>{{ $category_data->category_id  }}</td>
                                     <td>
                                         <ul class="list-unstyled hstack gap-1 mb-0">
                                             <li>
@@ -56,13 +62,13 @@
                                     tabindex="-1" role="dialog" data-bs-backdrop="static"
                                     aria-labelledby="editLargeModalLabel{{ $category_data->unique_key }}"
                                     aria-hidden="true">
-                                    @include('page.backend.category.edit')
+                                    @include('page.backend.subcategory.edit')
                                 </div>
                                 <div class="modal fade categorydelete-modal-xl{{ $category_data->unique_key }}"
                                     tabindex="-1" role="dialog"data-bs-backdrop="static"
                                     aria-labelledby="deleteLargeModalLabel{{ $category_data->unique_key }}"
                                     aria-hidden="true">
-                                    @include('page.backend.category.delete')
+                                    @include('page.backend.subcategory.delete')
                                 </div>
                             @endforeach
                         </tbody>
@@ -73,7 +79,7 @@
 
         <div class="modal fade category-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
             aria-hidden="true">
-            @include('page.backend.category.create')
+            @include('page.backend.subcategory.create')
         </div>
     </div>
 @endsection

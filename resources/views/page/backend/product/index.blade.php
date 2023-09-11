@@ -4,7 +4,7 @@
     <div class="content">
         <div class="page-header">
             <div class="page-title">
-                <h4>Product</h4>
+                <h4>Variant</h4>
             </div>
             @hasrole('Super-Admin')
             <div class="page-btn">
