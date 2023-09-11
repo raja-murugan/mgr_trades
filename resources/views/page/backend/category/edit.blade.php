@@ -24,7 +24,7 @@
                                 </select>
                         </div>
                     </div>
-                    <div class="col-lg-12 col-sm-12 col-12">
+                    <div class="col-lg-12 col-sm-12 col-12" hidden>
                         <div class="form-group">
                             <label>Image<span style="color: red;">*</span></label>
                             <input type="file" id="" class="form-control" name="productimage"><br/><br/>

@@ -26,6 +26,7 @@ class SessionController extends Controller
         $data->unique_key = $randomkey;
 
         $data->name = $request->get('name');
+        $data->note = $request->get('note');
 
         if ($request->productimage != "") {
             $productimage = $request->productimage;
@@ -46,6 +47,7 @@ class SessionController extends Controller
         $SessionData = Session::where('unique_key', '=', $unique_key)->first();
 
         $SessionData->name = $request->get('name');
+        $SessionData->note = $request->get('note');
 
         if ($request->productimage != "") {
             $productimage = $request->productimage;

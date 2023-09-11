@@ -23,11 +23,8 @@ return new class extends Migration
             $table->string('price');
             $table->string('counter_price');
             $table->string('customer_price');
-            $table->unsignedBigInteger('category_id');
-            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
-
-            $table->unsignedBigInteger('session_id');
-            $table->foreign('session_id')->references('id')->on('sessions')->onDelete('cascade');
+            $table->unsignedBigInteger('subcategory_id');
+            $table->foreign('subcategory_id')->references('id')->on('subcategories')->onDelete('cascade');
 
             $table->timestamps();
         });

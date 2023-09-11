@@ -13,6 +13,12 @@
                             <input type="text" name="name" placeholder="Enter name" required value="{{ $session_data->name }}">
                         </div>
                     </div>
+                    <div class="col-lg-12 col-sm-6 col-12">
+                        <div class="form-group">
+                            <label>Note<span style="color: red;">*</span></label>
+                            <textarea type="text" name="note" placeholder="Enter note">{!! $session_data->note !!}</textarea>
+                        </div>
+                    </div>
                     <div class="col-lg-12 col-sm-12 col-12">
                         <div class="form-group">
                             <label>Image<span style="color: red;">*</span></label>
