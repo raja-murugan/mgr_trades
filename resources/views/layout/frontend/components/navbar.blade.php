@@ -17,11 +17,11 @@
                             </li>
                             <li class="{{ Route::is('product') ? 'active current' : '' }}">
                                 <a href="{{ route('product') }}">Products</a>
-                                <ul>
+                                {{-- <ul>
                                     @foreach ($category as $categorys)
                                     <li class="dropdown">
                                         <a href="javascript::void(o);">{{ $categorys->session->name }} - {{ $categorys->name }}</a>
-                                        
+
                                         <ul>
                                             @foreach ($subcategory as $Subcategory_ies)
                                             @if ($Subcategory_ies->category_id == $categorys->id)
@@ -29,10 +29,10 @@
                                             @endif
                                             @endforeach
                                         </ul>
-                                        
+
                                     </li>
                                     @endforeach
-                                </ul>
+                                </ul> --}}
                             </li>
                             <li class="{{ Route::is('brand', 'product.details') ? 'active current' : '' }}">
                                 <a href="{{ route('brand') }}">Brand</a>

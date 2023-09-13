@@ -44,24 +44,29 @@
                 </div>
                 <div class="about-company__bottom">
                     <div class="row">
-                    @foreach ($category as $categoryies)
-                    @if ($categoryies->session_id == $brands->id)
-                        <div class="col-xl4 col-lg-4 " style="display:flex; margin-top: 20px;">
-                            <div class="col-xl-4 col-lg-5 ">
-                                <div class="about-company__bottom-left">
-                                    <div class="about-company__bottom-img">
-                                        <img src="{{ asset('assets/category/' . $categoryies->image) }}" alt="">
+                        @foreach ($category as $categoryies)
+                            @if ($categoryies->session_id == $brands->id)
+                                <div class="col-xl4 col-lg-4 " style="display:flex; margin-top: 20px;">
+                                    <div class="col-xl-4 col-lg-5 ">
+                                        <a href="{{ route('product.details', ['id' => $categoryies->id]) }}">
+                                            <div class="about-company__bottom-left">
+                                                <div class="about-company__bottom-img">
+                                                    <img src="{{ asset('assets/category/' . $categoryies->image) }}"
+                                                        alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xl-8 col-lg-7">
+                                        <a href="{{ route('product.details', ['id' => $categoryies->id]) }}">
+                                            <div class="">
+                                                <p class="about-company__text-4">{{ $categoryies->name }}</p>
+                                                <p class="about-company__text-2">Explore</p>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-xl-8 col-lg-7">
-                                <div class="">
-                                    <p class="about-company__text-4">{{ $categoryies->name }}</p>
-                                    <p class="about-company__text-2"></p>
-                                </div>
-                            </div>
-                        </div>
-                        @endif
+                            @endif
                         @endforeach
                     </div>
                 </div>

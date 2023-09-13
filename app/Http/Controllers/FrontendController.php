@@ -35,20 +35,20 @@ class FrontendController extends Controller
         $subcategory = Subcategory::where('soft_delete', '!=', 1)->get();
         $varient = Product::where('soft_delete', '!=', 1)->get();
 
-
-
         return view('page.frontend.product', compact('subcategory', 'varient', 'category'));
     }
 
     public function productdetails($id)
     {
-        $category = Category::where('soft_delete', '!=', 1)->get();
         $brandname = Session::where('id', '=', $id)->get();
-        $categorys = Category::where('soft_delete', '!=', 1)->where('session_id', '=', $id)->get();
-        $product = Product::where('soft_delete', '!=', 1)->where('session_id', '=', $id)->get();
-        $subcategory = Subcategory::where('soft_delete', '!=', 1)->get();
+        // $categorys = Category::where('soft_delete', '!=', 1)->where('session_id', '=', $id)->get();
+        // $product = Product::where('soft_delete', '!=', 1)->where('session_id', '=', $id)->get();
 
-        return view('page.frontend.product_details', compact('categorys', 'product', 'brandname', 'category', 'subcategory'));
+        $category = Category::where('soft_delete', '!=', 1)->get();
+        $subcategory = Subcategory::where('soft_delete', '!=', 1)->where('category_id', '=', $id)->get();
+        $varient = Product::where('soft_delete', '!=', 1)->get();
+
+        return view('page.frontend.product_details', compact('brandname', 'category', 'subcategory', 'varient'));
     }
 
     public function contact()
