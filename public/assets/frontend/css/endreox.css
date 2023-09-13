@@ -10333,7 +10333,7 @@ ul {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 122, 239, 0.9);
+  /* background-color: rgba(0, 122, 239, 0.9); */
   border-radius: 5px;
   visibility: hidden;
   -webkit-transform-origin: top center;
