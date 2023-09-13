@@ -35,10 +35,10 @@
                             <div class="project-page-one__single">
                                 <div class="project-page-one__img">
                                     <img src="{{ asset('assets/subcategory/' . $subcategorys->image) }}" alt="">
-                                    <div class="project-page-one__content">
+                                    {{-- <div class="project-page-one__content">
                                         <p class="project-page-one__sub-title">{{ $subcategorys->name }}</p>
                                     </div>
-                                    {{-- <div class="project-page-one__button">
+                                    <div class="project-page-one__button">
                                         <a class="img-popup"
                                             href="{{ asset('assets/subcategory/' . $subcategorys->image) }}">
                                             <img src="{{ asset('assets/frontend/images/icon/icon-zoom-1.png') }}"
