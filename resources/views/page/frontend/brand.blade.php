@@ -18,44 +18,120 @@
     </section>
     <!--Page Header End-->
 
-    <!--Project Page Two Start-->
-    <section class="project-page-two">
+    <!--About Company Start-->
+    <section class="about-company">
         <div class="container">
-            <div class="row">
-                @foreach ($brand as $brands)
-                    <!--Project Page Two Single Start-->
-
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="project-page-two__single">
-                            <div class="project-page-two__img">
-                                <img src="{{ asset('assets/brand/' . $brands->image) }}" alt="">
-                                <div class="project-page-two__button">
-                                    <a class="img-popup" href="{{ asset('assets/brand/' . $brands->image) }}">
-                                        <img src="{{ asset('assets/frontend/images/icon/icon-zoom-1.png') }}"
-                                            alt="">
-                                    </a>
-                                    <a href="{{ route('product.details', ['id' => $brands->id]) }}">
-                                        <img src="{{ asset('assets/frontend/images/icon/link-icon-1.png') }}"
-                                            alt="">
-                                    </a>
+            @foreach ($brand as $brands)
+                <div class="about-company__top">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="about-company__left">
+                                <div class="about-company__img">
+                                    <img src="{{ asset('assets/brand/' . $brands->image) }}" alt="">
                                 </div>
                             </div>
-                            <div class="project-page-two__content">
-                                <a href="{{ route('product.details', ['id' => $brands->id]) }}">
-                                    <h4 class="project-page-two__title"><a
-                                            href="{{ route('product.details', ['id' => $brands->id]) }}">{{ $brands->name }}</a>
-                                    </h4>
-                                    <a href="{{ route('product.details', ['id' => $brands->id]) }}">
-                                    <p class="project-page-two__sub-title">Explore More</p>
-                                    </a>
-                                </a>
+                        </div>
+                        <div class="col-xl-8 col-lg-7">
+                            <div class="about-company__right">
+                                <div class="section-title text-left">
+                                    <span class="section-title__tagline">MGER Trades</span>
+                                    <h2 class="section-title__title">{{ $brands->name }}</h2>
+                                </div>
+                                <p class="about-company__text-2" style="text-align: justify;">sed quia consequuntur magni dolores eos qui ratione
+                                    voluptatem sequi nesciunt. Neque porroisquam est, qui dolorem ipsum quia dolor sit
+                                    amet, consectetur, adipisci velit. sed quia non numquam qui ratione voluptatem sequi
+                                    nesciunt.sed quia consequuntur magni dolores eos qui ratione
+                                    voluptatem sequi nesciunt. Neque porroisquam est, qui dolorem ipsum quia dolor sit
+                                    amet, consectetur, adipisci velit. sed quia non numquam qui ratione voluptatem sequi
+                                    nesciunt.sed quia consequuntur magni dolores eos qui ratione
+                                    voluptatem sequi nesciunt. Neque porroisquam est, qui dolorem ipsum quia dolor sit
+                                    amet, consectetur, adipisci velit. sed quia non numquam qui ratione voluptatem sequi
+                                    nesciunt.</p>
                             </div>
                         </div>
                     </div>
-                    <!--Project Page Two Single End-->
-                @endforeach
-            </div>
+                </div>
+                <div class="about-company__bottom">
+                    <div class="row">
+                        <div class="col-xl4 col-lg-4" style="display:flex; margin-top: 20px;">
+                            <div class="col-xl-4 col-lg-5">
+                                <div class="about-company__bottom-left">
+                                    <div class="about-company__bottom-img">
+                                        <img src="{{ asset('assets/brand/' . $brands->image) }}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-7">
+                                <div class="">
+                                    <p class="about-company__text-4">Our mission</p>
+                                    <p class="about-company__text-2">Show Products</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl4 col-lg-4" style="display:flex; margin-top: 20px;">
+                            <div class="col-xl-4 col-lg-5">
+                                <div class="about-company__bottom-left">
+                                    <div class="about-company__bottom-img">
+                                        <img src="{{ asset('assets/brand/' . $brands->image) }}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-7">
+                                <div class="">
+                                    <p class="about-company__text-4">Our mission</p>
+                                    <p class="about-company__text-2">Show Products</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl4 col-lg-4" style="display:flex; margin-top: 20px;">
+                            <div class="col-xl-4 col-lg-5">
+                                <div class="about-company__bottom-left">
+                                    <div class="about-company__bottom-img">
+                                        <img src="{{ asset('assets/brand/' . $brands->image) }}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-7">
+                                <div class="">
+                                    <p class="about-company__text-4">Our mission</p>
+                                    <p class="about-company__text-2">Show Products</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl4 col-lg-4" style="display:flex; margin-top: 20px;">
+                            <div class="col-xl-4 col-lg-5">
+                                <div class="about-company__bottom-left">
+                                    <div class="about-company__bottom-img">
+                                        <img src="{{ asset('assets/brand/' . $brands->image) }}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-7">
+                                <div class="">
+                                    <p class="about-company__text-4">Our mission</p>
+                                    <p class="about-company__text-2">Show Products</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl4 col-lg-4" style="display:flex; margin-top: 20px;">
+                            <div class="col-xl-4 col-lg-5">
+                                <div class="about-company__bottom-left">
+                                    <div class="about-company__bottom-img">
+                                        <img src="{{ asset('assets/brand/' . $brands->image) }}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-7">
+                                <div class="">
+                                    <p class="about-company__text-4">Our mission</p>
+                                    <p class="about-company__text-2">Show Products</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
         </div>
     </section>
-    <!--Project Page Two End-->
+    <!--About Company End-->
 @endsection
