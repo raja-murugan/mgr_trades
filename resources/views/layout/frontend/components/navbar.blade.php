@@ -21,11 +21,15 @@
                                     @foreach ($category as $categorys)
                                     <li class="dropdown">
                                         <a href="javascript::void(o);">{{ $categorys->session->name }} - {{ $categorys->name }}</a>
+                                        
                                         <ul>
-                                            <li><a href="index.html">Header One</a></li>
-                                            <li><a href="index2.html">Header Two</a></li>
-                                            <li><a href="index3.html">Header Three</a></li>
+                                            @foreach ($subcategory as $Subcategory_ies)
+                                            @if ($Subcategory_ies->category_id == $categorys->id)
+                                            <li><a href="{{ route('product.details', ['id' => $Subcategory_ies->id]) }}">{{ $Subcategory_ies->name }}</a></li>
+                                            @endif
+                                            @endforeach
                                         </ul>
+                                        
                                     </li>
                                     @endforeach
                                 </ul>
