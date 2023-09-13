@@ -10,6 +10,7 @@
                         </li>
                     </ul>
                 </li>
+
                 <li class="submenu-open">
                     <h6 class="submenu-hdr">Sales</h6>
                     <ul>
@@ -19,8 +20,11 @@
                         <li class="{{ Route::is('category.index', 'category.store') ? 'active' : '' }}">
                             <a href="{{ route('category.index') }}"><i data-feather="credit-card"></i><span>Category</span></a>
                         </li>
+                        <li class="{{ Route::is('subcategory.index', 'subcategory.store') ? 'active' : '' }}">
+                            <a href="{{ route('subcategory.index') }}"><i data-feather="credit-card"></i><span>Product</span></a>
+                        </li>
                         <li class="{{ Route::is('product.index', 'product.store') ? 'active' : '' }}">
-                            <a href="{{ route('product.index') }}"><i data-feather="box"></i><span>Product</span></a>
+                            <a href="{{ route('product.index') }}"><i data-feather="box"></i><span>Variant</span></a>
                         </li>
                         <li class="{{ Route::is('sales.index') ? 'active' : '' }}" hidden>
                             <a href="{{ route('sales.index') }}"><i data-feather="shopping-cart"></i><span>Sales</span></a>
@@ -52,6 +56,7 @@
                         </li>
                     </ul>
                 </li>
+                @hasrole('Super-Admin')
                 <li class="submenu-open">
                     <h6 class="submenu-hdr">User Management</h6>
                     <ul>
@@ -63,6 +68,7 @@
                         </li>
                     </ul>
                 </li>
+                @endhasrole
             </ul>
         </div>
     </div>

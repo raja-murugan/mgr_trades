@@ -9,9 +9,11 @@ use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ContactusController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SaleController;
+use App\Http\Controllers\SubcategoryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,9 +32,13 @@ Route::get('/about', [FrontendController::class, 'about'])->name('about');
 
 Route::get('/product', [FrontendController::class, 'product'])->name('product');
 
-Route::get('/product/details', [FrontendController::class, 'productdetails'])->name('product.details');
+Route::get('/brand', [FrontendController::class, 'brand'])->name('brand');
+
+Route::get('/product/details/{id}', [FrontendController::class, 'productdetails'])->name('product.details');
 
 Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
+
+Route::post('/contact/store', [ContactusController::class, 'store'])->name('contact.store');
 
 // MANAGER INVITE ACCEPT
 Route::get('/accept/{token}', [ManagerController::class, 'accept']);
@@ -141,6 +147,17 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
         Route::middleware(['auth:sanctum', 'verified'])->post('/zworktechnology/category/edit/{unique_key}', [CategoryController::class, 'edit'])->name('category.edit');
         // DELETE
         Route::middleware(['auth:sanctum', 'verified'])->put('/zworktechnology/category/delete/{unique_key}', [CategoryController::class, 'delete'])->name('category.delete');
+    });
+    // CATEGORY CONTROLLER
+    Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+        // INDEX
+        Route::middleware(['auth:sanctum', 'verified'])->get('/zworktechnology/sub-category', [SubcategoryController::class, 'index'])->name('subcategory.index');
+        // STORE
+        Route::middleware(['auth:sanctum', 'verified'])->post('/zworktechnology/sub-category/store', [SubcategoryController::class, 'store'])->name('subcategory.store');
+        // EDIT
+        Route::middleware(['auth:sanctum', 'verified'])->post('/zworktechnology/sub-category/edit/{unique_key}', [SubcategoryController::class, 'edit'])->name('subcategory.edit');
+        // DELETE
+        Route::middleware(['auth:sanctum', 'verified'])->put('/zworktechnology/sub-category/delete/{unique_key}', [SubcategoryController::class, 'delete'])->name('subcategory.delete');
     });
     // PRODUCT CONTROLLER
     Route::middleware(['auth:sanctum', 'verified'])->group(function () {

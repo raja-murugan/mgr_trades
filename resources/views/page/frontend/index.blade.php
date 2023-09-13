@@ -5,14 +5,12 @@
 <section class="main-slider">
     <div class="main-slider__bg" style="background-image: url(assets/frontend/images/backgrounds/main-slider-bg.jpg);">
     </div>
-    <div class="main-slider__big-text">MGRTrade</div>
+    <div class="main-slider__big-text">MGRTrades</div>
     <div class="main-slider__wrap">
         <div class="container">
             <div class="main-slider__inner">
-                <h3 class="main-slider__title">Best Service for <br> <span>Electricity</span></h3>
-                <p class="main-slider__text">Our team has a reputation of being <br> knowledgeable, professional
-                    and
-                    <br> friendly.</p>
+                <h4 class="main-slider__title">Welcome to<br> <span>MGR TRADES</span></h4>
+                <p class="main-slider__text">Your Trusted Source for Electrical and Plumbing Product.</p>
                 <a href="https://api.whatsapp.com/send/?phone=%2B919994023234" target="_blank" class="main-slider__btn thm-btn">Connect Now</a>
                 <div class="main-slider__three-facts">
                     <ul class="list-unstyled main-slider__three-facts-list">
@@ -40,7 +38,7 @@
                     <img src="{{ asset('assets/frontend/images/shapes/main-slider-shape-1.png') }}" alt="">
                 </div>
                 <div class="main-slider__shape-2 float-bob-x">
-                    <img src="{{ asset('assets/frontend/images/shapes/main-slider-shape-2.png') }}" alt="">
+                    {{-- <img src="{{ asset('assets/frontend/images/shapes/main-slider-shape-2.png') }}" alt=""> --}}
                 </div>
             </div>
         </div>
@@ -59,13 +57,9 @@
                 <div class="about-one__left">
                     <div class="section-title text-left">
                         <span class="section-title__tagline">about company</span>
-                        <h2 class="section-title__title">We are Commited to Provide
-                            Quality endreox Service</h2>
+                        <h2 class="section-title__title">Passion for Excellence, Lighting Up Possibilities</h2>
                     </div>
-                    <p class="about-one__text">Bring to the table win-win survival strategies to ensure
-                        proactive domination. At the end of the day, going forward, a new normal that has
-                        evolved from generation is on the runway heading towards a streamlined cloud solution.
-                        strategies to ensure proactive domination. </p>
+                    <p class="about-one__text">At MGR TRADES, we specialize in providing high- quality electrical and plumbing supplies at competitive prices. With years of industry experience, we are proud to be your one-stop destination for all your electrical and plumbing needs.</p>
                     <div class="about-one__points-box">
                         <ul class="about-one__points-list list-unstyled">
                             <li>
@@ -91,7 +85,7 @@
                                     <span class="icon-comment"></span>
                                 </div>
                                 <div class="about-one__points-text">
-                                    <p>Annual Pass Programs</p>
+                                    <p>Quality Products</p>
                                 </div>
                             </li>
                             <li>
@@ -99,7 +93,7 @@
                                     <span class="icon-comment"></span>
                                 </div>
                                 <div class="about-one__points-text">
-                                    <p>Trained Emploies</p>
+                                    <p>24/7 Service </p>
                                 </div>
                             </li>
                         </ul>
@@ -115,7 +109,7 @@
                             </div>
                         </div>
                         <div class="about-one__years-box">
-                            <h3 class="about-one__years">25</h3>
+                            <h3 class="about-one__years">20+</h3>
                             <p class="about-one__years-experience">Years of
                                 Experience</p>
                         </div>
@@ -135,15 +129,15 @@
                 <div class="col-xl-6 col-lg-6">
                     <div class="services-one__left">
                         <div class="section-title text-left">
-                            <span class="section-title__tagline">Service Provide</span>
-                            <h2 class="section-title__title">We Serve All Sectors</h2>
+                            <span class="section-title__tagline">Brands</span>
+                            <h2 class="section-title__title">Top Brand Products</h2>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6">
                     <div class="services-one__right">
-                        <p class="services-one__text">Bring to the table win-win survival strategies to ensure
-                            proactive domination. At the end of the day.</p>
+                        <p class="services-one__text">Bringing the top brand product with a most affordable price only in trichy
+                            20 + years leading the way in Electrical services.</p>
                     </div>
                 </div>
             </div>
@@ -175,15 +169,15 @@
         }
         }'>
             <!--Services One Single Start-->
+            @foreach ($brand as $brands)
             <div class="item">
                 <div class="services-one__single">
                     <div class="services-one__img-box">
                         <div class="services-one__img">
-                            <img src="{{ asset('assets/frontend/images/services/services-1-1.jpg') }}" alt="">
+                            <img src="{{ asset('assets/brand/' . $brands->image) }}" alt="">
                         </div>
                         <div class="services-one__content">
-                            <h3 class="services-one__title"><a href="electricals-service.html">Residential
-                                    Service<i class="icon-right-arrow"></i></a></h3>
+                            <h3 class="services-one__title"><a href="{{ route('product.details', ['id' => $brands->id]) }}">{{ $brands->name }}<i class="icon-right-arrow"></i></a></h3>
                         </div>
                         <div class="services-one__shape-1">
                             <img src="{{ asset('assets/frontend/images/shapes/services-one-shape-1.png') }}" alt="">
@@ -192,43 +186,7 @@
                     <div class="services-one__shape-2"></div>
                 </div>
             </div>
-            <!--Services One Single End-->
-            <!--Services One Single Start-->
-            <div class="item">
-                <div class="services-one__single">
-                    <div class="services-one__img-box">
-                        <div class="services-one__img">
-                            <img src="{{ asset('assets/frontend/images/services/services-1-2.jpg') }}" alt="">
-                        </div>
-                        <div class="services-one__content">
-                            <h3 class="services-one__title"><a href="electrical-panels.html">Commercial
-                                    Service<i class="icon-right-arrow"></i></a></h3>
-                        </div>
-                        <div class="services-one__shape-1">
-                            <img src="{{ asset('assets/frontend/images/shapes/services-one-shape-1.png') }}" alt="">
-                        </div>
-                    </div>
-                    <div class="services-one__shape-2"></div>
-                </div>
-            </div>
-            <!--Services One Single End-->
-            <!--Services One Single Start-->
-            <div class="item">
-                <div class="services-one__single">
-                    <div class="services-one__img-box">
-                        <div class="services-one__img">
-                            <img src="{{ asset('assets/frontend/images/services/services-1-3.jpg') }}" alt="">
-                        </div>
-                        <div class="services-one__content">
-                            <h3 class="services-one__title"><a href="indoor-lighting.html">Industrial Service<i class="icon-right-arrow"></i></a></h3>
-                        </div>
-                        <div class="services-one__shape-1 services-one__shape-3">
-                            <img src="{{ asset('assets/frontend/images/shapes/services-one-shape-1.png') }}" alt="">
-                        </div>
-                    </div>
-                    <div class="services-one__shape-2"></div>
-                </div>
-            </div>
+            @endforeach
             <!--Services One Single End-->
         </div>
     </div>
@@ -242,8 +200,9 @@
             <div class="col-xl-4 col-lg-4">
                 <div class="counter-one__left">
                     <div class="counter-one__year-box">
-                        <p class="counter-one__year"><span>25</span>Year</p>
-                        <h3 class="counter-one__year-title">Leading The Way In <span>endreox Projects</span>
+                        <p class="counter-one__year"><span>20+</span>Year</p>
+                        <h3 class="counter-one__year-title">Years of
+                            Experience</span>
                         </h3>
                     </div>
                 </div>
@@ -256,9 +215,8 @@
                                 <span class="icon-home"></span>
                             </div>
                             <div class="counter-one__content-box">
-                                <h3 class="odometer" data-count="450">00</h3><span class="counter-one__letter">+</span>
-                                <p class="counter-one__text">Residential
-                                    <br> Projects</p>
+                                <h3 class="odometer" data-count="55">00</h3><span class="counter-one__letter">+</span>
+                                <p class="counter-one__text">Products</p>
                             </div>
                         </li>
                         <li class="counter-one__single">
@@ -266,9 +224,8 @@
                                 <span class="icon-office-building"></span>
                             </div>
                             <div class="counter-one__content-box">
-                                <h3 class="odometer" data-count="120">00</h3><span class="counter-one__letter">+</span>
-                                <p class="counter-one__text">Commercial
-                                    <br> Projects</p>
+                                <h3 class="odometer" data-count="50">00</h3><span class="counter-one__letter">+</span>
+                                <p class="counter-one__text">Clients</p>
                             </div>
                         </li>
                         <li class="counter-one__single">
@@ -305,7 +262,7 @@
                                     <span class="icon-reviews"></span>
                                 </div>
                                 <div class="why-choose-one__content-box">
-                                    <h3 class="odometer" data-count="2700">00</h3><span class="why-choose-one__letter">+</span>
+                                    <h3 class="odometer" data-count="700">00</h3><span class="why-choose-one__letter">+</span>
                                     <p class="why-choose-one__count-text">Satisfied
                                         <br>Customers</p>
                                 </div>
@@ -319,19 +276,15 @@
                             <span class="section-title__tagline">Our Professionals</span>
                             <h2 class="section-title__title">Why Choose Us</h2>
                         </div>
-                        <p class="why-choose-one__text">If you need to repair or replace your Plumbing system,
-                            call
-                            today and talk to one of our Plumbing specialists. They’ll answer all your questions
-                            and
-                            arrange an appointment at your convenience. They’ll answer all your questions and
-                            arrange an appointment at your convenience.</p>
+                        <p class="why-choose-one__text">MGR Trades stands out with a seasoned team delivering top-tier, tailored electrical solutions, prioritizing quality, and adhering to safety standards. As the exclusive Sudhakar distributor in Trichy, we offer comprehensive electrical and plumbing solutions.
+                        </p>
                         <ul class="why-choose-one__points list-unstyled">
                             <li>
                                 <div class="icon">
                                     <span class="fa fa-arrow-right"></span>
                                 </div>
                                 <div class="text">
-                                    <p>Use best materials and labor in every project.</p>
+                                    <p>Proven Expertise for Electrical Solutions.</p>
                                 </div>
                             </li>
                             <li>
@@ -339,7 +292,7 @@
                                     <span class="fa fa-arrow-right"></span>
                                 </div>
                                 <div class="text">
-                                    <p>Integrity and honesty from top to bottom.</p>
+                                    <p>Reliability: Consistency You Can Trust.</p>
                                 </div>
                             </li>
                             <li>
@@ -347,7 +300,7 @@
                                     <span class="fa fa-arrow-right"></span>
                                 </div>
                                 <div class="text">
-                                    <p>Affordable and fair prices.</p>
+                                    <p>Exclusive Sudhakar Products in Trichy.</p>
                                 </div>
                             </li>
                         </ul>
@@ -364,10 +317,8 @@
                             <span class="icon-certificate"></span>
                         </div>
                         <div class="why-choose-one__content">
-                            <h3 class="why-choose-one__title"><a href="about.html">Awarded Company</a></h3>
-                            <p class="why-choose-one__text-2">There are many variations passages <br> of Lorem
-                                Ipsum
-                                available, but the majority have suffered alter.</p>
+                            <h3 class="why-choose-one__title"><a href="about.html">Premium Products</a></h3>
+                            <p class="why-choose-one__text-2">Our commitment to excellence has earned us recognition, setting industry benchmarks for top-quality products.</p>
                         </div>
                     </div>
                 </div>
@@ -379,10 +330,8 @@
                             <span class="icon-technician"></span>
                         </div>
                         <div class="why-choose-one__content">
-                            <h3 class="why-choose-one__title"><a href="team.html">Trained Workers</a></h3>
-                            <p class="why-choose-one__text-2">There are many variations passages <br> of Lorem
-                                Ipsum
-                                available, but the majority have suffered alter.</p>
+                            <h3 class="why-choose-one__title"><a href="team.html">Expertly Sourced</a></h3>
+                            <p class="why-choose-one__text-2"> Our products are curated by skilled professionals with rigorous training, ensuring top quality for every selection.</p>
                         </div>
                     </div>
                 </div>
@@ -394,10 +343,9 @@
                             <span class="icon-flag"></span>
                         </div>
                         <div class="why-choose-one__content">
-                            <h3 class="why-choose-one__title"><a href="about.html">Industry Leader</a></h3>
-                            <p class="why-choose-one__text-2">There are many variations passages <br> of Lorem
-                                Ipsum
-                                available, but the majority have suffered alter.</p>
+                            <h3 class="why-choose-one__title"><a href="about.html">Setting Standards</a></h3>
+                            <p class="why-choose-one__text-2">We lead in innovation and quality, continuously raising the bar and redefining industry standards.
+                            </p>
                         </div>
                     </div>
                 </div>

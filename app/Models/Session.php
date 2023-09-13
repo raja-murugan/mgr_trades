@@ -13,6 +13,7 @@ class Session extends Model
         'unique_key',
         'soft_delete',
         'image',
+        'note',
         'name'
     ];
 

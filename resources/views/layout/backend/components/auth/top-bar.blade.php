@@ -34,12 +34,11 @@
                     </span>
                     <span class="user-detail">
                         <span class="user-name">{{ Auth::user()->name }}</span>
-                        {{-- @hasrole('Super-Admin')
+                        @hasrole('Super-Admin')
                             <span class="user-role">Super Admin</span>
                         @else
                             <span class="user-role">Admin</span>
-                        @endhasrole --}}
-                        <span class="user-role">Super Admin</span>
+                        @endhasrole
                     </span>
                 </span>
             </a>

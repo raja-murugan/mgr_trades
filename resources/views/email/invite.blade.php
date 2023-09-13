@@ -8,7 +8,7 @@
     <meta name="x-apple-disable-message-reformatting">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="telephone=no" name="format-detection">
-    <title>Invite Mail From Annapoorani Foods - Invite You to Access the Zwork Technology Billing and Monthly Accounts Management Software</title>
+    <title>Invite Mail From MGR Trades to Access the Zwork Technology Product Management Software</title>
     <!--[if (mso 16)]><style type="text/css"> a {text-decoration: none;} </style><![endif]--><!--[if gte mso 9]><style>sup { font-size: 100% !important; }</style><![endif]--><!--[if gte mso 9]><xml> <o:OfficeDocumentSettings> <o:AllowPNG></o:AllowPNG> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml><![endif]-->
     <style type="text/css">
         #outlook a {
@@ -514,10 +514,8 @@
                                                                     <p
                                                                         style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333;font-size:14px;text-align:justify">
                                                                         We are delighted to welcome you to the
-                                                                        Annpoorani Foods team! As a valued member, you
-                                                                        now have access to our secure accounting and
-                                                                        sales portal, where you can manage our sales and
-                                                                        monthly accounts efficiently. Please find below
+                                                                        MGR Trades team! As a valued member, you
+                                                                        now have access to our secure product management portal, where you can manage our product efficiently. Please find below
                                                                         your account details to access the portal:</p>
                                                                 </td>
                                                             </tr>

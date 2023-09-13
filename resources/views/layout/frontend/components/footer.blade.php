@@ -13,7 +13,7 @@
                                 <span class="icon-location"></span>
                             </div>
                             <div class="content">
-                                <h4>48, CKP Garden, Kallanai Road, </h4><p>Thiuverumbur, Tiruchirappalli - 620013</p>
+                                <h4>48, CKP Garden, Kallanai Road, </h4><p>Thiruverumbur, Tiruchirappalli - 620013</p>
                             </div>
                         </li>
                         <li>
@@ -65,13 +65,12 @@
                 <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                     <div class="footer-widget__column footer-widget__services">
                         <div class="footer-widget__title-box">
-                            <h3 class="footer-widget__title">Services</h3>
+                            <h3 class="footer-widget__title">Supply</h3>
                         </div>
                         <ul class="footer-widget__useful-links-list list-unstyled">
                             <li><a href="electrical-panels.html">Residential</a></li>
                             <li><a href="electricals-service.html">Commercial</a></li>
                             <li><a href="install-ceiling-fan.html">Industrial</a></li>
-                            <li><a href="airconditioning.html">Fuse & Panels</a></li>
                         </ul>
                     </div>
                 </div>
@@ -81,9 +80,9 @@
                             <a href="index.html"><img src="{{ asset('assets/frontend/images/resources/footer-logo.png') }}" alt="" width="168"></a>
                         </div>
                         <div class="site-footer__social">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/mgrtrades2020" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            {{-- <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a> --}}
+                            <a href="https://www.instagram.com/mgrtrades2020/" target="_blank"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>

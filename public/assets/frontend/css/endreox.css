@@ -2298,9 +2298,9 @@ ul {
 
 .main-slider__big-text {
   position: absolute;
-  bottom: 135px;
-  left: -425px;
-  font-size: 201px;
+  bottom: 280px;
+  left: -350px;
+  font-size: 150px;
   font-family: var(--endreox-font-two);
   font-weight: 900;
   line-height: 201px;
@@ -9000,7 +9000,7 @@ ul {
   background-position: top center;
   background-size: cover;
   mix-blend-mode: hard-light;
-  opacity: 0.08;
+  opacity: 0.50;
   z-index: -1;
 }
 

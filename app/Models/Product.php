@@ -19,6 +19,12 @@ class Product extends Model
         'counter_price',
         'customer_price',
         'category_id',
-        'session_id'
+        'session_id',
+        'subcategory_id'
     ];
+
+    public function subcategory()
+    {
+        return $this->belongsTo(Subcategory::class, 'subcategory_id');
+    }
 }

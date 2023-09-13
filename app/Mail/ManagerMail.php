@@ -23,7 +23,7 @@ class ManagerMail extends Mailable
 
     public function build()
     {
-        return $this->subject('Invite Mail From Annapoorani Foods - Invite You to Access the Zwork Technology Billing and Monthly Accounts Management Software')
+        return $this->subject('Invite Mail From MGR Trades to Access the Zwork Technology Product Management Software')
                 ->view('email.invite');
     }
 }

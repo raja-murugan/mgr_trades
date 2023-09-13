@@ -15,8 +15,23 @@
                             <li class="{{ Route::is('about') ? 'active current' : '' }}">
                                 <a href="{{ route('about') }}">About Us</a>
                             </li>
-                            <li class="{{ Route::is('product', 'product.details') ? 'active current' : '' }}">
+                            <li class="{{ Route::is('product') ? 'active current' : '' }}">
                                 <a href="{{ route('product') }}">Products</a>
+                                <ul>
+                                    @foreach ($category as $categorys)
+                                    <li class="dropdown">
+                                        <a href="javascript::void(o);">{{ $categorys->session->name }} - {{ $categorys->name }}</a>
+                                        <ul>
+                                            <li><a href="index.html">Header One</a></li>
+                                            <li><a href="index2.html">Header Two</a></li>
+                                            <li><a href="index3.html">Header Three</a></li>
+                                        </ul>
+                                    </li>
+                                    @endforeach
+                                </ul>
+                            </li>
+                            <li class="{{ Route::is('brand', 'product.details') ? 'active current' : '' }}">
+                                <a href="{{ route('brand') }}">Brand</a>
                             </li>
                             <li class="{{ Route::is('contact') ? 'active current' : '' }}">
                                 <a href="{{ route('contact') }}">Contact Us</a>

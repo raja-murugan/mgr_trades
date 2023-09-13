@@ -7,9 +7,6 @@
     </div>
     <div class="container">
         <div class="page-header__inner">
-            <div class="page-header__shape-1 float-bob-y">
-                <img src="{{ asset('assets/frontend/images/shapes/page-header-shape-1.png') }}" alt="">
-            </div>
             <h2>About Us</h2>
             <ul class="thm-breadcrumb list-unstyled">
                 <li><a href="index.html">Home</a></li>
@@ -32,21 +29,15 @@
                         <h2 class="section-title__title">About Us Our Company Mission & Vision for Long Term
                         </h2>
                     </div>
-                    <p class="about-three__text-1">The passage experienced a surge in popularity during the
-                        1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as
-                        desktop publishers bundled the text with their software. Today it's seen all around the
-                        web; on templates, websites, and stock designs. Use our generator to get your own, or
-                        read on for the authoritative history of lorem ipsum.</p>
-                    <p class="about-three__text-2">About the ubiquitous lorem ipsum passage. The passage is
-                        attributed to an unknown typesetter in the 15th century who is thought to have scrambled
-                        parts plan of roof. <a href="contact.html">Contact us</a> for more information.</p>
+                    <p class="about-three__text-1">MGR TRADES is a leading electrical and plumbing wholesaler dedicated to serving professionals and businesses in the construction and maintenance industries. With a wide range of products and a commitment to customer satisfaction, we have become a trusted partner for countless projects</p>
+                    <p class="about-three__text-2">We specialize in providing high- quality electrical and plumbing supplies at competitive prices. With years of industry experience, we are proud to be your one-stop destination for all your electrical and plumbing needs. <a href="contact.html">Contact us</a> for more information.</p>
                     <ul class="about-three__points list-unstyled">
                         <li>
                             <div class="icon">
                                 <span class="icon-home"></span>
                             </div>
                             <div class="text">
-                                <p>Residential Electrical <br> Solutions</p>
+                                <p>Electrical <br> Solutions</p>
                             </div>
                         </li>
                         <li>
@@ -54,7 +45,7 @@
                                 <span class="icon-building"></span>
                             </div>
                             <div class="text">
-                                <p>Residential Electrical <br> Solutions</p>
+                                <p>Plumbing <br> Solutions</p>
                             </div>
                         </li>
                     </ul>
@@ -65,7 +56,7 @@
                     <div class="about-three__img">
                         <img src="{{ asset('assets/frontend/images/resources/about-three-img-1.jpg') }}" alt="">
                         <div class="about-three__experience">
-                            <h3>30</h3>
+                            <h3>20 +</h3>
                             <p>Years of <br> experience in <br> this field</p>
                         </div>
                     </div>
@@ -81,9 +72,8 @@
     <div class="container">
         <div class="section-title text-center">
             <span class="section-title__tagline">Our Benefits</span>
-            <h2 class="section-title__title">What is Repairing... Electrical Services For You</h2>
-            <p class="benefits__text-1">Discover how professional Roofer approach repair for your home roof make
-                fix</p>
+            <h2 class="section-title__title">What can you expect from us</h2>
+            <p class="benefits__text-1">Discover how MGR Treads stand alone from the crowd</p>
         </div>
         <div class="row">
             <!--Benefits Single Start-->
@@ -94,9 +84,8 @@
                             <span class="icon-family-insurance"></span>
                         </div>
                         <div class="benefits__content">
-                            <h4 class="benefits__title">Family Tradition <br> Business</h4>
-                            <p class="benefits__text-2">We often find ourselves working side-by-side with home
-                                healthcare providers.</p>
+                            <h4 class="benefits__title">Our Commitment to You</h4>
+                            <p class="benefits__text-2">Reliability, Quality, and Innovation.</p>
                         </div>
                     </div>
                 </div>
@@ -110,9 +99,8 @@
                             <span class="icon-worker"></span>
                         </div>
                         <div class="benefits__content">
-                            <h4 class="benefits__title">Professional Trained <br> Workers</h4>
-                            <p class="benefits__text-2">We often find ourselves working side-by-side with home
-                                healthcare providers.</p>
+                            <h4 class="benefits__title">Discover Our Difference</h4>
+                            <p class="benefits__text-2">Excellence That Sets Us Apart.</p>
                         </div>
                     </div>
                 </div>
@@ -126,9 +114,8 @@
                             <span class="icon-satisfaction"></span>
                         </div>
                         <div class="benefits__content">
-                            <h4 class="benefits__title">Complete Electrical <br> Warranty</h4>
-                            <p class="benefits__text-2">We often find ourselves working side-by-side with home
-                                healthcare providers.</p>
+                            <h4 class="benefits__title">Setting Ourselves Apart</h4>
+                            <p class="benefits__text-2">Unqiue and long losting products.</p>
                         </div>
                     </div>
                 </div>
@@ -146,7 +133,7 @@
             <div class="col-xl-4 col-lg-4">
                 <div class="counter-one__left">
                     <div class="counter-one__year-box">
-                        <p class="counter-one__year"><span>25</span>Year</p>
+                        <p class="counter-one__year"><span>25</span> + Year</p>
                         <h3 class="counter-one__year-title">Leading The Way In <span>endreox Projects</span>
                         </h3>
                     </div>
@@ -209,7 +196,7 @@
                                     <span class="icon-reviews"></span>
                                 </div>
                                 <div class="why-choose-one__content-box">
-                                    <h3 class="odometer" data-count="2700">00</h3><span class="why-choose-one__letter">+</span>
+                                    <h3 class="odometer" data-count="700">00</h3><span class="why-choose-one__letter">+</span>
                                     <p class="why-choose-one__count-text">Satisfied
                                         <br>Customers</p>
                                 </div>
@@ -223,19 +210,15 @@
                             <span class="section-title__tagline">Our Professionals</span>
                             <h2 class="section-title__title">Why Choose Us</h2>
                         </div>
-                        <p class="why-choose-one__text">If you need to repair or replace your Plumbing system,
-                            call
-                            today and talk to one of our Plumbing specialists. They’ll answer all your questions
-                            and
-                            arrange an appointment at your convenience. They’ll answer all your questions and
-                            arrange an appointment at your convenience.</p>
+                        <p class="why-choose-one__text">MGR Trades stands out with a seasoned team delivering top-tier, tailored electrical solutions, prioritizing quality, and adhering to safety standards. As the exclusive Sudhakar distributor in Trichy, we offer comprehensive electrical and plumbing solutions.
+                        </p>
                         <ul class="why-choose-one__points list-unstyled">
                             <li>
                                 <div class="icon">
                                     <span class="fa fa-arrow-right"></span>
                                 </div>
                                 <div class="text">
-                                    <p>Use best materials and labor in every project.</p>
+                                    <p>Proven Expertise for Electrical Solutions.</p>
                                 </div>
                             </li>
                             <li>
@@ -243,7 +226,7 @@
                                     <span class="fa fa-arrow-right"></span>
                                 </div>
                                 <div class="text">
-                                    <p>Integrity and honesty from top to bottom.</p>
+                                    <p>Reliability: Consistency You Can Trust.</p>
                                 </div>
                             </li>
                             <li>
@@ -251,7 +234,7 @@
                                     <span class="fa fa-arrow-right"></span>
                                 </div>
                                 <div class="text">
-                                    <p>Affordable and fair prices.</p>
+                                    <p>Exclusive Sudhakar Products in Trichy.</p>
                                 </div>
                             </li>
                         </ul>
@@ -268,10 +251,8 @@
                             <span class="icon-certificate"></span>
                         </div>
                         <div class="why-choose-one__content">
-                            <h3 class="why-choose-one__title"><a href="about.html">Awarded Company</a></h3>
-                            <p class="why-choose-one__text-2">There are many variations passages <br> of Lorem
-                                Ipsum
-                                available, but the majority have suffered alter.</p>
+                            <h3 class="why-choose-one__title"><a href="about.html">Premium Products</a></h3>
+                            <p class="why-choose-one__text-2">Our commitment to excellence has earned us recognition, setting industry benchmarks for top-quality products.</p>
                         </div>
                     </div>
                 </div>
@@ -283,10 +264,8 @@
                             <span class="icon-technician"></span>
                         </div>
                         <div class="why-choose-one__content">
-                            <h3 class="why-choose-one__title"><a href="team.html">Trained Workers</a></h3>
-                            <p class="why-choose-one__text-2">There are many variations passages <br> of Lorem
-                                Ipsum
-                                available, but the majority have suffered alter.</p>
+                            <h3 class="why-choose-one__title"><a href="team.html">Expertly Sourced</a></h3>
+                            <p class="why-choose-one__text-2"> Our products are curated by skilled professionals with rigorous training, ensuring top quality for every selection.</p>
                         </div>
                     </div>
                 </div>
@@ -298,10 +277,9 @@
                             <span class="icon-flag"></span>
                         </div>
                         <div class="why-choose-one__content">
-                            <h3 class="why-choose-one__title"><a href="about.html">Industry Leader</a></h3>
-                            <p class="why-choose-one__text-2">There are many variations passages <br> of Lorem
-                                Ipsum
-                                available, but the majority have suffered alter.</p>
+                            <h3 class="why-choose-one__title"><a href="about.html">Setting Standards</a></h3>
+                            <p class="why-choose-one__text-2">We lead in innovation and quality, continuously raising the bar and redefining industry standards.
+                            </p>
                         </div>
                     </div>
                 </div>
