@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Session;
 use App\Models\Subcategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -12,8 +13,36 @@ class SubcategoryController extends Controller
     public function index()
     {
         $data = Subcategory::where('soft_delete', '!=', 1)->get();
+        $subCategory_data = [];
+        foreach ($data as $key => $datas) {
+            $Category = Category::findOrFail($datas->category_id);
+            $session = Session::findOrFail($Category->session_id);
+
+            $subCategory_data[] = array(
+                'id' => $datas->id,
+                'unique_key' => $datas->unique_key,
+                'name' => $datas->name,
+                'image' => $datas->image,
+                'category_id' => $datas->category_id,
+                'Category' => $Category->name,
+                'session' => $session->name,
+            );
+        }
+
+
         $category = Category::where('soft_delete', '!=', 1)->get();
-        return view('page.backend.subcategory.index', compact('data', 'category'));
+        $Category_data = [];
+        foreach ($category as $key => $category_ies) {
+
+            $session = Session::findOrFail($category_ies->session_id);
+
+            $Category_data[] = array(
+                'id' => $category_ies->id,
+                'name' => $category_ies->name,
+                'session' => $session->name,
+            );
+        }
+        return view('page.backend.subcategory.index', compact('subCategory_data', 'Category_data'));
     }
 
     public function store(Request $request)

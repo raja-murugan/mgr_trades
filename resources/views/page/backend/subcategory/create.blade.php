@@ -18,8 +18,8 @@
                             <label>Category<span style="color: red;">*</span></label>
                             <select class="form-control  select" name="category_id" id="category_id" required>
                                     <option value="" disabled selected hiddden>Select Category</option>
-                                    @foreach ($category as $categorys)
-                                        <option value="{{ $categorys->id }}">{{ $categorys->name }}</option>
+                                    @foreach ($Category_data as $Category_datas)
+                                        <option value="{{ $Category_datas['id'] }}">{{ $Category_datas['name'] }} - {{ $Category_datas['session'] }}</option>
                                     @endforeach
                                 </select>
                         </div>

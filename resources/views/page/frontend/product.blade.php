@@ -59,10 +59,12 @@
                                         <th style="border: 1px solid black; border-collapse: collapse; padding-right: 20px; padding-left: 20px;">MRP Price</th>
                                     </tr>
                                     @foreach ($varient as $varients)
+                                    @if ($varients->subcategory_id == $subcategorys->id)
                                     <tr style="border: 1px solid black; border-collapse: collapse;">
                                         <td style="border: 1px solid black; border-collapse: collapse; padding-right: 20px; padding-left: 20px;">{{ $varients->name }}</td>
                                         <td style="border: 1px solid black; border-collapse: collapse; padding-right: 20px; padding-left: 20px;">₹ {{ $varients->price }}</td>
                                     </tr>
+                                    @endif
                                     @endforeach
                                 </table>
                             </div>
