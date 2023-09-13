@@ -38,13 +38,13 @@
                                     <div class="project-page-one__content">
                                         <p class="project-page-one__sub-title">{{ $subcategorys->name }}</p>
                                     </div>
-                                    <div class="project-page-one__button">
+                                    {{-- <div class="project-page-one__button">
                                         <a class="img-popup"
                                             href="{{ asset('assets/subcategory/' . $subcategorys->image) }}">
                                             <img src="{{ asset('assets/frontend/images/icon/icon-zoom-1.png') }}"
                                                 alt="">
                                         </a>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                         </div>
@@ -53,8 +53,6 @@
                                 <div class="project-page-two__content" style="margin-top: 10px !important">
                                     <h4 class="project-page-two__title" style="display: flex; margin-bottom: 10px;"><a
                                             href="javascript::void(o);">{{ $subcategorys->name }} </a>
-                                        &nbsp;&nbsp;<p class="project-page-two__sub-title"> (
-                                            {{ $subcategorys->category->name }} )</p>
                                     </h4>
 
                                 </div>
