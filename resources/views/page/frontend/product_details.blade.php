@@ -33,9 +33,9 @@
                     <div class="col-xl-6 col-lg-6 col-md-6" style="display: flex">
                         <div class="col-xl-6 col-lg-6 col-md-6">
                             <div class="project-page-one__single">
-                                <img src="{{ asset('assets/subcategory/' . $subcategorys->image) }}" alt="">
-                                {{-- <div class="project-page-one__img">
-                                    <div class="project-page-one__content">
+                                <div class="project-page-one__img">
+                                    <img src="{{ asset('assets/subcategory/' . $subcategorys->image) }}" alt="">
+                                    {{-- <div class="project-page-one__content">
                                         <p class="project-page-one__sub-title">{{ $subcategorys->name }}</p>
                                     </div>
                                     <div class="project-page-one__button">
@@ -44,8 +44,8 @@
                                             <img src="{{ asset('assets/frontend/images/icon/icon-zoom-1.png') }}"
                                                 alt="">
                                         </a>
-                                    </div>
-                                </div> --}}
+                                    </div> --}}
+                                </div>
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6" style="margin-left: 20px;">
