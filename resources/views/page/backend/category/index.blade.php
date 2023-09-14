@@ -21,6 +21,7 @@
                         <thead>
                             <tr>
                                 <th>Sl. No</th>
+                                <th>Image</th>
                                 <th>Name</th>
                                 <th>Brand</th>
                                 @hasrole('Super-Admin')
@@ -32,6 +33,11 @@
                             @foreach ($data as $keydata => $category_data)
                                 <tr>
                                     <td>{{ ++$keydata }}</td>
+                                    @if ($category_data['image'] == "")
+                                    <td></td>
+                                    @elseif ($category_data['image'] != "")
+                                    <td><img src="{{ asset('assets/category/' . $category_data['image']) }}" alt="" width="50" height="50"></td>
+                                    @endif
                                     <td>{{ $category_data->name }}</td>
                                     <td>{{ $category_data->session->name  }}</td>
                                     <td>

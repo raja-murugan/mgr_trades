@@ -35,7 +35,7 @@ class FrontendController extends Controller
         $subcategory = Subcategory::where('soft_delete', '!=', 1)->get();
         $varient = Product::where('soft_delete', '!=', 1)->get();
 
-        
+
 
         return view('page.frontend.product', compact('subcategory', 'varient', 'category'));
     }
