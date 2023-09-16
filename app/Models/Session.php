@@ -14,7 +14,8 @@ class Session extends Model
         'soft_delete',
         'image',
         'note',
-        'name'
+        'name',
+        'name_two'
     ];
 
     public function category()

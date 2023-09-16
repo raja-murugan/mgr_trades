@@ -9,8 +9,14 @@
                 <div class="row">
                     <div class="col-lg-12 col-sm-6 col-12">
                         <div class="form-group">
-                            <label>Brand Name <span style="color: red;">*</span></label>
+                            <label>Brand Name <span style="color: red;">*</span><span> ( For Brand Page )</span></label>
                             <input type="text" name="name" placeholder="Enter name" required>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-6 col-12">
+                        <div class="form-group">
+                            <label>Brand Name <span style="color: red;">*</span><span>( For Product Page )</span></label>
+                            <input type="text" name="name_two" placeholder="Enter name" required>
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-6 col-12">

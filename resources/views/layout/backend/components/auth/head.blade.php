@@ -32,3 +32,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" type="text/css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+<script src="https://cdn.tiny.cloud/1/eraf3oo5x4229s7g70swbu0mu8a4ildcf14v0hsy731rcqjn/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>

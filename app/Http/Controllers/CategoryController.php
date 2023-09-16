@@ -26,6 +26,7 @@ class CategoryController extends Controller
 
         $data->unique_key = $randomkey;
         $data->name = $request->get('name');
+        $data->note = $request->get('note');
         $data->session_id = $request->get('session_id');
 
         if ($request->productimage != "") {
@@ -47,6 +48,7 @@ class CategoryController extends Controller
         $CategoryData = Category::where('unique_key', '=', $unique_key)->first();
 
         $CategoryData->name = $request->get('name');
+        $CategoryData->note = $request->get('note');
         $CategoryData->session_id = $request->get('session_id');
 
         if ($request->productimage != "") {

@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->string('note')->nullable();
             $table->string('price');
+            $table->string('show_on');
             $table->string('counter_price');
             $table->string('customer_price');
             $table->unsignedBigInteger('subcategory_id');

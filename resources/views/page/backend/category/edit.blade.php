@@ -15,13 +15,19 @@
                     </div>
                     <div class="col-lg-12 col-sm-6 col-12">
                         <div class="form-group">
-                            <label>Session<span style="color: red;">*</span></label>
+                            <label>Brand<span style="color: red;">*</span></label>
                             <select class="form-control  select" name="session_id" id="session_id" required>
-                                    <option value="" disabled selected hiddden>Select Session</option>
+                                    <option value="" disabled selected hiddden>Select brand</option>
                                     @foreach ($session as $sessions)
                                         <option value="{{ $sessions->id }}"@if ($sessions->id === $category_data->session_id) selected='selected' @endif>{{ $sessions->name }}</option>
                                     @endforeach
                                 </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-6 col-12">
+                        <div class="form-group">
+                            <label>Note<span style="color: red;">*</span></label>
+                            <textarea type="text" name="note" placeholder="Enter note">{!! $category_data->note !!}</textarea>
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 col-12">

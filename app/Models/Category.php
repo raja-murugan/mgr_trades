@@ -14,6 +14,7 @@ class Category extends Model
         'soft_delete',
         'name',
         'image',
+        'note',
         'session_id'
     ];
 

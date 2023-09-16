@@ -61,7 +61,7 @@
                                         <a href="{{ route('product.details', ['id' => $categoryies->id]) }}">
                                             <div class="">
                                                 <p class="about-company__text-4">{{ $categoryies->name }}</p>
-                                                <p class="about-company__text-2">Explore</p>
+                                                <p class="about-company__text-2">{{ $categoryies->note }}</p>
                                             </div>
                                         </a>
                                     </div>

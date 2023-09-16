@@ -18,6 +18,7 @@ class Product extends Model
         'price',
         'counter_price',
         'customer_price',
+        'show_on',
         'category_id',
         'session_id',
         'subcategory_id'

@@ -28,61 +28,43 @@
         <div class="container">
             <div class="row">
                 @foreach ($subcategory as $subcategorys)
-                    <!--Project Page Two Single Start-->
-
-                    <div class="col-xl-6 col-lg-6 col-md-6" style="display: flex">
-                        <div class="col-xl-6 col-lg-6 col-md-6">
-                            <div class="project-page-one__single">
-                                <div class="project-page-one__img">
+                    <div class="col-xl4 col-lg-4 " style="display:flex; margin-top: 20px;">
+                        <div class="col-xl-4 col-lg-5 ">
+                            <div class="about-company__bottom-left">
+                                <div class="about-company__bottom-img">
                                     <img src="{{ asset('assets/subcategory/' . $subcategorys->image) }}" alt="">
-                                    {{-- <div class="project-page-one__content">
-                                        <p class="project-page-one__sub-title">{{ $subcategorys->name }}</p>
-                                    </div>
-                                    <div class="project-page-one__button">
-                                        <a class="img-popup"
-                                            href="{{ asset('assets/subcategory/' . $subcategorys->image) }}">
-                                            <img src="{{ asset('assets/frontend/images/icon/icon-zoom-1.png') }}"
-                                                alt="">
-                                        </a>
-                                    </div> --}}
                                 </div>
+
+                            <div class="">
+                                <p class="about-company__text-4" style="text-align: center; color: red;">{{ $subcategorys->name }}</p>
+                            </div>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6" style="margin-left: 20px;">
-                            <div>
-                                <div class="project-page-two__content" style="margin-top: 10px !important">
-                                    <h4 class="project-page-two__title" style="display: flex; margin-bottom: 10px;"><a
-                                            href="javascript::void(o);">{{ $subcategorys->name }} </a>
-                                    </h4>
-
-                                </div>
-                                <table style="border: 1px solid black; border-collapse: collapse;">
-                                    <tr
-                                        style="border: 1px solid black; border-collapse: collapse; background-color: #dddddd;">
-                                        <th
-                                            style="border: 1px solid black; border-collapse: collapse; padding-right: 20px; padding-left: 20px;">
-                                            Product Size</th>
-                                        <th
-                                            style="border: 1px solid black; border-collapse: collapse; padding-right: 20px; padding-left: 20px;">
-                                            MRP Price</th>
-                                    </tr>
-                                    @foreach ($varient as $varients)
-                                        @if ($varients->subcategory_id == $subcategorys->id)
-                                            <tr style="border: 1px solid black; border-collapse: collapse;">
-                                                <td
-                                                    style="border: 1px solid black; border-collapse: collapse; padding-right: 20px; padding-left: 20px;">
-                                                    {{ $varients->name }}</td>
-                                                <td
-                                                    style="border: 1px solid black; border-collapse: collapse; padding-right: 20px; padding-left: 20px;">
-                                                    ₹ {{ $varients->price }}</td>
-                                            </tr>
-                                        @endif
-                                    @endforeach
-                                </table>
-                            </div>
+                        <div class="col-xl-8 col-lg-7">
+                            <table style="border: 1px solid black; border-collapse: collapse; width: -moz-available;">
+                                <tr style="border: 1px solid black; border-collapse: collapse; background-color: #dddddd;">
+                                    <th
+                                        style="border: 1px solid black; border-collapse: collapse; padding-right: 20px; padding-left: 20px;">
+                                        Size</th>
+                                    <th
+                                        style="border: 1px solid black; border-collapse: collapse; padding-right: 20px; padding-left: 20px;">
+                                        MRP</th>
+                                </tr>
+                                @foreach ($varient as $varients)
+                                    @if ($varients->subcategory_id == $subcategorys->id)
+                                        <tr style="border: 1px solid black; border-collapse: collapse;">
+                                            <td
+                                                style="border: 1px solid black; border-collapse: collapse; padding-right: 20px; padding-left: 20px;">
+                                                {{ $varients->name }}</td>
+                                            <td
+                                                style="border: 1px solid black; border-collapse: collapse; padding-right: 20px; padding-left: 20px;">
+                                                ₹ {{ $varients->price }}</td>
+                                        </tr>
+                                    @endif
+                                @endforeach
+                            </table>
                         </div>
                     </div>
-                    <!--Project Page Two Single End-->
                 @endforeach
             </div>
         </div>

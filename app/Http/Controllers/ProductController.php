@@ -41,7 +41,7 @@ class ProductController extends Controller
         $data->counter_price = $request->get('counter_price');
         $data->customer_price = $request->get('customer_price');
         // $data->category_id = $request->get('category_id');
-        // $data->session_id = $request->get('session_id');
+        $data->show_on = $request->get('show_on');
         $data->subcategory_id = $request->get('subcategory_id');
 
         if ($request->productimage != "") {
@@ -71,7 +71,7 @@ class ProductController extends Controller
         $ProductData->customer_price = $request->get('customer_price');
         // $ProductData->category_id = $request->get('category_id');
         $ProductData->subcategory_id = $request->get('subcategory_id');
-        // $ProductData->session_id = $request->get('session_id');
+        $ProductData->show_on = $request->get('show_on');
 
 
         if ($request->productimage != "") {

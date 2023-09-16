@@ -19,6 +19,7 @@ return new class extends Migration
             $table->boolean('soft_delete')->default(0);
             $table->string('name');
             $table->string('image')->nullable();
+            $table->longText('note');
             $table->unsignedBigInteger('session_id');
             $table->foreign('session_id')->references('id')->on('sessions')->onDelete('cascade');
             $table->timestamps();
