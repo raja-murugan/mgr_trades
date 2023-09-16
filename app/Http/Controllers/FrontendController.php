@@ -33,7 +33,7 @@ class FrontendController extends Controller
     {
         $category = Category::where('soft_delete', '!=', 1)->get();
         $subcategory = Subcategory::where('soft_delete', '!=', 1)->get();
-        $varient = Product::where('soft_delete', '!=', 1)->get();
+        $varient = Product::where('soft_delete', '!=', 1)->where('show_on', '!=', 0)->get();
 
         return view('page.frontend.product', compact('subcategory', 'varient', 'category'));
     }
@@ -46,7 +46,7 @@ class FrontendController extends Controller
 
         $category = Category::where('soft_delete', '!=', 1)->get();
         $subcategory = Subcategory::where('soft_delete', '!=', 1)->where('category_id', '=', $id)->get();
-        $varient = Product::where('soft_delete', '!=', 1)->get();
+        $varient = Product::where('soft_delete', '!=', 1)->where('show_on', '!=', 0)->get();
 
         return view('page.frontend.product_details', compact('brandname', 'category', 'subcategory', 'varient'));
     }
