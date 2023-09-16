@@ -43,7 +43,7 @@
                             </div>
                             <div class="col-xl-6">
                                 <div class="contact-page__input-box">
-                                    <input type="email" placeholder="Your Email" name="email" required>
+                                    <input type="email" placeholder="Your Email" name="email">
                                 </div>
                             </div>
                         </div>
