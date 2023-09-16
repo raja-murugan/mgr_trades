@@ -46,8 +46,8 @@
                     <div class="row">
                         @foreach ($category as $categoryies)
                             @if ($categoryies->session_id == $brands->id)
-                                <div class="col-xl4 col-lg-4 " style="display:flex; margin-top: 20px;">
-                                    <div class="col-xl-4 col-lg-5 ">
+                                <div class="col-xl-4 col-lg-4 " style="display:flex; margin-top: 20px;">
+                                    <div class="col-xl-4 col-lg-4 col-4 ">
                                         <a href="{{ route('product.details', ['id' => $categoryies->id]) }}">
                                             <div class="about-company__bottom-left">
                                                 <div class="about-company__bottom-img">
@@ -57,7 +57,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-xl-8 col-lg-7">
+                                    <div class="col-xl-8 col-lg-8 col-8">
                                         <a href="{{ route('product.details', ['id' => $categoryies->id]) }}">
                                             <div class="">
                                                 <p class="about-company__text-4">{{ $categoryies->name }}</p>
