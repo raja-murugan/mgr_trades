@@ -37,7 +37,7 @@
                                     <span class="section-title__tagline">MGR Trades</span>
                                     <h2 class="section-title__title">{{ $brands->name }}</h2>
                                 </div>
-                                <p class="about-company__text-2" style="text-align: justify;">{{ $brands->note }}.</p>
+                                <p class="about-company__text-2" style="text-align: justify;">{!! $brands->note !!}.</p>
                             </div>
                         </div>
                     </div>
