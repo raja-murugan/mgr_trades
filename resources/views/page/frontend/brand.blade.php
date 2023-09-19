@@ -34,7 +34,7 @@
                         <div class="col-xl-8 col-lg-7">
                             <div class="about-company__right">
                                 <div class="section-title text-left">
-                                    <span class="section-title__tagline">MGER Trades</span>
+                                    <span class="section-title__tagline">MGR Trades</span>
                                     <h2 class="section-title__title">{{ $brands->name }}</h2>
                                 </div>
                                 <p class="about-company__text-2" style="text-align: justify;">{{ $brands->note }}.</p>

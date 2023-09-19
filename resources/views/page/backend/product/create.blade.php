@@ -48,11 +48,11 @@
                             <label>Show on Page <span style="color: red;">*</span></label>
                             <div style="display:flex">
                                 <div style="display:flex; margin-right:20px;">
-                                    <input type="radio" id="yes" name="show_on" value="1">
+                                    <input type="radio" id="yes" name="show_on" value="1" checked>
                                     <label for="yes" style="margin-left: 10px; margin-top:5px;">Yes</label>
                                 </div>
                                 <div style="display:flex">
-                                    <input type="radio" id="no" name="show_on" value="0" checked>
+                                    <input type="radio" id="no" name="show_on" value="0">
                                     <label for="no" style="margin-left: 10px; margin-top:5px;">No</label>
                                 </div>
                             </div>
@@ -61,13 +61,13 @@
                     <div class="col-lg-3 col-sm-12 col-12">
                         <div class="form-group">
                             <label>Counter Price<span style="color: red;">*</span></label>
-                            <input type="text" name="counter_price" placeholder="Enter Product Price" required>
+                            <input type="text" name="counter_price" placeholder="Enter Product Price" required value="0">
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-12 col-12">
                         <div class="form-group">
                             <label>Customer Price<span style="color: red;">*</span></label>
-                            <input type="text" name="customer_price" placeholder="Enter Product Price" required>
+                            <input type="text" name="customer_price" placeholder="Enter Product Price" required value="0">
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-12 col-12">
