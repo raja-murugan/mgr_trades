@@ -179,7 +179,7 @@
                                 </div>
                                 <div class="services-three__content-box">
                                     <h3 class="services-three__title"><a
-                                            href="{{ route('product.details', ['id' => $brands->id]) }}">{{ $brands->name }}</a>
+                                            href="{{ route('product.details', ['id' => $brands->id]) }}">{{ $brands->name_two }}</a>
                                     </h3>
                                     <div class="services-three__read-more">
                                         <a href="{{ route('product.details', ['id' => $brands->id]) }}">Explore More <span>+</span></a>
