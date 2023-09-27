@@ -30,11 +30,11 @@
                         <div class="col-xl-4 col-lg-5 ">
                             <div class="about-company__bottom-left">
                                 <div class="about-company__bottom-img">
-                                    <img src="{{ asset('assets/subcategory/' . $subcategorys->image) }}" alt="" style="border: red 1px solid;">
+                                    <img src="{{ asset('assets/subcategory/' . $subcategorys->image) }}" alt="" style="border: red 1px solid;  border-radius: 100px;">
                                 </div>
 
                             <div class="">
-                                <p class="about-company__text-4" style="text-align: center; color: black; line-height: 10px; margin-top: 10px;">{{ $subcategorys->name }}</p>
+                                <p class="about-company__text-4" style="text-align: center; color: black; line-height: 20px; margin-top: 10px;">{{ $subcategorys->name }}</p>
                             </div>
                             </div>
                         </div>
