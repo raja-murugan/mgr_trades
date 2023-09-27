@@ -35,7 +35,7 @@
                             <div class="about-company__right">
                                 <div class="section-title text-left">
                                     <span class="section-title__tagline">MGR Trades</span>
-                                    <h2 class="section-title__title">{{ $brands->name }}</h2>
+                                    <h2 class="section-title__title" style="font-size: 35px;">{{ $brands->name }}</h2>
                                 </div>
                                 <span class="about-company__text-2" style="text-align: justify;">{!! $brands->note !!}.</span>
                             </div>
@@ -52,7 +52,7 @@
                                             <div class="about-company__bottom-left">
                                                 <div class="about-company__bottom-img">
                                                     <img src="{{ asset('assets/category/' . $categoryies->image) }}"
-                                                        alt="">
+                                                        alt="" style="border: #030721 1px solid;height: 130px;object-fit: fill;">
                                                 </div>
                                             </div>
                                         </a>
@@ -60,7 +60,7 @@
                                     <div class="col-xl-8 col-lg-8 col-8">
                                         <a href="{{ route('product.details', ['id' => $categoryies->id]) }}">
                                             <div class="">
-                                                <p class="about-company__text-4">{{ $categoryies->name }}</p>
+                                                <p class="about-company__text-4" style="font-size: 20px;font-weight: 700;">{{ $categoryies->name }}</p>
                                                 {!! $categoryies->note !!}
                                             </div>
                                         </a>
