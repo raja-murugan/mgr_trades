@@ -9455,8 +9455,8 @@ ul {
 }
 
 .about-company__text-4 {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 500;
   color: var(--endreox-black);
   position: relative;
   display: block;
