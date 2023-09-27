@@ -178,11 +178,11 @@
                                     </div>
                                 </div>
                                 <div class="services-three__content-box">
-                                    <h3 class="services-three__title"><a
+                                    <h3 class="services-three__title" style="font-size:16px;"><a
                                             href="{{ route('product.details', ['id' => $brands->id]) }}">{{ $brands->name_two }}</a>
                                     </h3>
                                     <div class="services-three__read-more">
-                                        <a href="{{ route('product.details', ['id' => $brands->id]) }}">Explore More <span>+</span></a>
+                                        <a href="{{ route('product.details', ['id' => $brands->id]) }}" style="font-size:12px; font-weight: 500">Explore More <span>+</span></a>
                                     </div>
                                 </div>
                             </div>
