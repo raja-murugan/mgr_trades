@@ -3,14 +3,16 @@
 @section('content')
     <!--Page Header Start-->
     <section class="page-header">
-        <div class="page-header-bg" style="background-image: url(assets/images/backgrounds/page-header-bg-1.png);">
+        <div class="page-header-bg" style="background-image: url(assets/images/backgrounds/page-header-bg.png);">
         </div>
         <div class="container">
             <div class="page-header__inner">
                 <div class="page-header__shape-1 float-bob-y">
                     <img src="assets/images/shapes/page-header-shape-1.png" alt="">
                 </div>
-                <h2>Products</h2>
+                @foreach ($categorys as $category)
+                <h2>{{ $category->name }}</h2>
+                @endforeach
                 <ul class="thm-breadcrumb list-unstyled">
                     <li><a href="index.html">Home</a></li>
                     <li><span>/</span></li>
@@ -32,11 +34,11 @@
                         <div class="col-xl-4 col-lg-5 ">
                             <div class="about-company__bottom-left">
                                 <div class="about-company__bottom-img">
-                                    <img src="{{ asset('assets/subcategory/' . $subcategorys->image) }}" alt="">
+                                    <img src="{{ asset('assets/subcategory/' . $subcategorys->image) }}" alt="" style="border: #030721 1px solid;  border-radius: 10px 10px 0px 0px;">
                                 </div>
 
                             <div class="">
-                                <p class="about-company__text-4" style="text-align: center; color: red;">{{ $subcategorys->name }}</p>
+                                <p class="about-company__text-4" style="text-align: center; color: white; line-height: 20px; paddind: 2px; background: #030721; border-radius: 0px 0px 10px 10px;">{{ $subcategorys->name }}</p>
                             </div>
                             </div>
                         </div>

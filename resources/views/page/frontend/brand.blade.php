@@ -52,7 +52,7 @@
                                             <div class="about-company__bottom-left">
                                                 <div class="about-company__bottom-img">
                                                     <img src="{{ asset('assets/category/' . $categoryies->image) }}"
-                                                        alt="" style="border: #030721 1px solid;height: 130px;object-fit: fill;">
+                                                        alt="" style="border: #030721 1px solid; object-fit: fill;">
                                                 </div>
                                             </div>
                                         </a>

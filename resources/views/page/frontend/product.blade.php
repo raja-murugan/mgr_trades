@@ -34,7 +34,7 @@
                                 </div>
 
                             <div class="">
-                                <p class="about-company__text-4" style="text-align: center; color: white; line-height: 20px; paddind: 2px; background: #030721; border-radius: 2px 0px;">{{ $subcategorys->name }}</p>
+                                <p class="about-company__text-4" style="text-align: center; color: white; line-height: 20px; paddind: 2px; background: #030721; border-radius: 0px 0px 10px 10px;">{{ $subcategorys->name }}</p>
                             </div>
                             </div>
                         </div>
