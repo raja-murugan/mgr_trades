@@ -21,10 +21,10 @@
             <div class="swiper-wrapper">
 
                 <div class="swiper-slide">
-                    <div class="main-slider__img">
+                    {{-- <div class="main-slider__img">
                         <img src="{{ asset('assets/frontend/images/resources/main-slider-2-1.png') }}" alt=""
                             class="float-bob-y">
-                    </div>
+                    </div> --}}
                     <div class="main-slider-two__shape-1">
                         <img src="{{ asset('assets/frontend/images/shapes/main-slider-two-shape-1.png') }}" alt="">
                     </div>
@@ -48,10 +48,10 @@
                 </div>
 
                 <div class="swiper-slide">
-                    <div class="main-slider__img">
+                    {{-- <div class="main-slider__img">
                         <img src="{{ asset('assets/frontend/images/resources/main-slider-2-2.png') }}" alt=""
                             class="float-bob-y">
-                    </div>
+                    </div> --}}
                     <div class="main-slider-two__shape-1">
                         <img src="{{ asset('assets/frontend/images/shapes/main-slider-two-shape-1.png') }}" alt="">
                     </div>
@@ -76,10 +76,10 @@
 
 
                 <div class="swiper-slide">
-                    <div class="main-slider__img">
+                    {{-- <div class="main-slider__img">
                         <img src="{{ asset('assets/frontend/images/resources/main-slider-2-1.png') }}" alt=""
                             class="float-bob-y">
-                    </div>
+                    </div> --}}
                     <div class="main-slider-two__shape-1">
                         <img src="{{ asset('assets/frontend/images/shapes/main-slider-two-shape-1.png') }}" alt="">
                     </div>
