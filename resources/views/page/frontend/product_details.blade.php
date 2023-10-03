@@ -43,23 +43,23 @@
                             </div>
                         </div>
                         <div class="col-xl-8 col-lg-10 col-8">
-                            <table style="border: 1px solid black; border-collapse: collapse; width: -moz-available;">
+                            <table style="border: 1px solid black; border-collapse: collapse; width: -moz-available; with:100%;">
                                 <tr style="border: 1px solid black; border-collapse: collapse; background-color: #dddddd;">
                                     <th
-                                        style="border: 1px solid black; border-collapse: collapse; padding-right: 20px; padding-left: 20px;">
+                                        style="border: 1px solid black; border-collapse: collapse; padding-right: 20px; padding-left: 20px; with:50%;">
                                         Size</th>
                                     <th
-                                        style="border: 1px solid black; border-collapse: collapse; padding-right: 20px; padding-left: 20px;">
+                                        style="border: 1px solid black; border-collapse: collapse; padding-right: 20px; padding-left: 20px; with:50%;">
                                         MRP</th>
                                 </tr>
                                 @foreach ($varient as $varients)
                                     @if ($varients->subcategory_id == $subcategorys->id)
                                         <tr style="border: 1px solid black; border-collapse: collapse;">
                                             <td
-                                                style="border: 1px solid black; border-collapse: collapse; padding-right: 20px; padding-left: 20px;">
+                                                style="border: 1px solid black; border-collapse: collapse; padding-right: 20px; padding-left: 20px; with:50%;">
                                                 {{ $varients->name }}</td>
                                             <td
-                                                style="border: 1px solid black; border-collapse: collapse; padding-right: 20px; padding-left: 20px;">
+                                                style="border: 1px solid black; border-collapse: collapse; padding-right: 20px; padding-left: 20px; with:50%;">
                                                 ₹ {{ $varients->price }}</td>
                                         </tr>
                                     @endif
