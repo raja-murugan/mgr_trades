@@ -25,9 +25,10 @@
                 <h2 class="section-title__title">Our Products</h2>
             </div>
             @foreach ($category as $categorys)
-            <hr>
+
                 <p class="about-company__text-4" style="font-size: 20px; font-weight: 700; color: red; margin-top: 15px">
                     {{ $categorys->name }}</p>
+                    <hr>
                 <div class="row">
                     @foreach ($subcategory as $subcategorys)
                         @if ($subcategorys->category_id == $categorys->id)
