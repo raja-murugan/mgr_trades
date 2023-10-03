@@ -76,6 +76,8 @@
                         @endif
                     @endforeach
                 </div>
+                <hr>
+                <hr>
             @endforeach
         </div>
     </section>
