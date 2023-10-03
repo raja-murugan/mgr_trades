@@ -30,7 +30,7 @@
                 <div class="row">
                     @foreach ($subcategory as $subcategorys)
                         @if ($subcategorys->category_id == $categorys->id)
-                            <div class="col-xl-2 col-lg-2 col-2" style="display:flex; margin-top: 20px;">
+                            <div class="col-xl-2 col-lg-4 col-4" style="display:flex; margin-top: 20px;">
                                 <div class="col-xl-12 col-lg-12 col-12">
                                     <div class="about-company__bottom-left">
                                         <div class="about-company__bottom-img">
@@ -46,7 +46,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                {{-- <div class="col-xl-8 col-lg-7 col-8">
+                                {{-- <div class="col-xl-8 col-lg-10 col-8">
                                     <table
                                         style="border: 1px solid black; border-collapse: collapse; width: -moz-available;">
                                         <tr
