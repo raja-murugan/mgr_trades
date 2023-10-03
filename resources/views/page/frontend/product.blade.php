@@ -25,6 +25,7 @@
                 <h2 class="section-title__title">Our Products</h2>
             </div>
             @foreach ($category as $categorys)
+            <hr>
                 <p class="about-company__text-4" style="font-size: 20px; font-weight: 700; color: red; margin-top: 15px">
                     {{ $categorys->name }}</p>
                 <div class="row">
