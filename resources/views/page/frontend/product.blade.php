@@ -30,7 +30,7 @@
                 <div class="row">
                     @foreach ($subcategory as $subcategorys)
                         @if ($subcategorys->category_id == $categorys->id)
-                            <div class="col-xl-2 col-lg-4 col-4" style="display:flex; margin-top: 20px;">
+                            <div class="col-xl-2 col-lg-6 col-6" style="display:flex; margin-top: 20px;">
                                 <div class="col-xl-12 col-lg-12 col-12">
                                     <div class="about-company__bottom-left">
                                         <div class="about-company__bottom-img">
