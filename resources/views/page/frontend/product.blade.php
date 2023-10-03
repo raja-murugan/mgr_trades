@@ -25,14 +25,12 @@
                 <h2 class="section-title__title">Our Products</h2>
             </div>
             @foreach ($category as $categorys)
-
                 <p class="about-company__text-4" style="font-size: 20px; font-weight: 700; color: red; margin-top: 15px">
                     {{ $categorys->name }}</p>
-                    <hr>
                 <div class="row">
                     @foreach ($subcategory as $subcategorys)
                         @if ($subcategorys->category_id == $categorys->id)
-                            <div class="col-xl-2 col-lg-2 " style="display:flex; margin-top: 20px;">
+                            <div class="col-xl-2 col-lg-2 col-2" style="display:flex; margin-top: 20px;">
                                 <div class="col-xl-12 col-lg-12 col-12">
                                     <div class="about-company__bottom-left">
                                         <div class="about-company__bottom-img">
@@ -78,7 +76,6 @@
                         @endif
                     @endforeach
                 </div>
-                <hr>
             @endforeach
         </div>
     </section>

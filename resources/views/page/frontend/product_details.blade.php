@@ -30,8 +30,8 @@
         <div class="container">
             <div class="row">
                 @foreach ($subcategory as $subcategorys)
-                    <div class="col-xl4 col-lg-4 " style="display:flex; margin-top: 20px;">
-                        <div class="col-xl-4 col-lg-5 ">
+                    <div class="col-xl-4 col-lg-4 col-4" style="display:flex; margin-top: 20px;">
+                        <div class="col-xl-4 col-lg-4 col-4">
                             <div class="about-company__bottom-left">
                                 <div class="about-company__bottom-img">
                                     <img src="{{ asset('assets/subcategory/' . $subcategorys->image) }}" alt="" style="border: #030721 1px solid;  border-radius: 10px 10px 0px 0px;">
@@ -42,7 +42,7 @@
                             </div>
                             </div>
                         </div>
-                        <div class="col-xl-8 col-lg-7">
+                        <div class="col-xl-8 col-lg-8 col-8">
                             <table style="border: 1px solid black; border-collapse: collapse; width: -moz-available;">
                                 <tr style="border: 1px solid black; border-collapse: collapse; background-color: #dddddd;">
                                     <th
