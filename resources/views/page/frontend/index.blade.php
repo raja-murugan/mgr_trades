@@ -30,13 +30,10 @@
                                         <div class="main-slider-three__content-inner">
                                             <div class="main-slider-three__title-box">
                                                 <span class="main-slider-three__tagline">Welcome to MGR Trades</span>
-                                                <h2 class="main-slider-three__title">Trusted And Reliable <br>
-                                                    Electrical Service</h2>
+                                                <h2 class="main-slider-three__title">The Power Behind Your Projects</h2>
                                             </div>
-                                            <p class="main-slider-three__text">When you're having electrical issues, we
-                                                know
-                                                how important it is <br> to have them resolved quickly, conveniently and
-                                                effectively.</p>
+                                            <p class="main-slider-three__text">Unlock Success with Premier Electrical and Plumbing Supplies from MGR Traders. Upgrade Now!
+                                            </p>
                                             <div class="main-slider-three__btn-boxes">
                                                 <a href="{{ route('contact') }}" class="thm-btn main-slider-three__btn-1">Contact Us <span class="fas fa-arrow-right"></span></a>
                                             </div>
@@ -56,15 +53,10 @@
                                     <div class="main-slider-three__content main-slider-three__content-left">
                                         <div class="main-slider-three__content-inner">
                                             <div class="main-slider-three__title-box">
-                                                <span class="main-slider-three__tagline">providing 24/7 electrical
-                                                    service</span>
-                                                <h2 class="main-slider-three__title">We Are Available <br> At Your Door
-                                                    Step</h2>
+                                                <span class="main-slider-three__tagline">Welcome to MGR Trades</span>
+                                                <h2 class="main-slider-three__title">Wired for Success: Your Electrical and Plumbing Source</h2>
                                             </div>
-                                            <p class="main-slider-three__text">When you're having electrical issues, we
-                                                know
-                                                how important it is <br> to have them resolved quickly, conveniently and
-                                                effectively.</p>
+                                            <p class="main-slider-three__text">Empower Your Projects with Premium Supplies from MGR Traders. Explore, Innovate, Succeed!</p>
                                             <div class="main-slider-three__btn-boxes">
                                                 <a href="https://api.whatsapp.com/send/?phone=%2B919994023234" target="_blank" class="thm-btn main-slider-three__btn-2">Chat With Us<span class="fas fa-arrow-right"></span></a>
                                             </div>
