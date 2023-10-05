@@ -30,9 +30,9 @@
                                         <div class="main-slider-three__content-inner">
                                             <div class="main-slider-three__title-box">
                                                 <span class="main-slider-three__tagline">Welcome to MGR Trades</span>
-                                                <h2 class="main-slider-three__title">The Power Behind Your Projects</h2>
+                                                <h2 class="main-slider-three__title">The Power Behind <br> Your Projects</h2>
                                             </div>
-                                            <p class="main-slider-three__text">Unlock Success with Premier Electrical and Plumbing Supplies from MGR Traders. Upgrade Now!
+                                            <p class="main-slider-three__text">Unlock Success with Premier Electrical and Plumbing Supplies <br> from MGR Traders. Upgrade Now!
                                             </p>
                                             <div class="main-slider-three__btn-boxes">
                                                 <a href="{{ route('contact') }}" class="thm-btn main-slider-three__btn-1">Contact Us <span class="fas fa-arrow-right"></span></a>
@@ -54,7 +54,7 @@
                                         <div class="main-slider-three__content-inner">
                                             <div class="main-slider-three__title-box">
                                                 <span class="main-slider-three__tagline">Welcome to MGR Trades</span>
-                                                <h2 class="main-slider-three__title">Wired for Success: Your Electrical and Plumbing Source</h2>
+                                                <h2 class="main-slider-three__title">Your Electrical and Plumbing Source</h2>
                                             </div>
                                             <p class="main-slider-three__text">Empower Your Projects with Premium Supplies from MGR Traders. Explore, Innovate, Succeed!</p>
                                             <div class="main-slider-three__btn-boxes">
