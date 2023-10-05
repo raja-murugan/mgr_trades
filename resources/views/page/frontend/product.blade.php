@@ -3,7 +3,7 @@
 @section('content')
     <!--Page Header Start-->
     <section class="page-header">
-        <div class="page-header-bg" style="background-image: url(assets/frontend/images/backgrounds/page-header-bg.png);">
+        <div class="page-header-bg" style="background-image: url(assets/frontend/images/backgrounds/page-header-bg-2.png);">
         </div>
         <div class="container">
             <div class="page-header__inner">
@@ -25,7 +25,7 @@
                 <h2 class="section-title__title">Our Products</h2>
             </div>
             @foreach ($category as $categorys)
-                <p class="about-company__text-4" style="font-size: 20px; font-weight: 700; color: red; margin-top: 15px">
+                <p class="about-company__text-4" style="font-size: 20px; font-weight: 700; color: #09142b; margin-top: 15px; ">
                     {{ $categorys->name }}</p>
                 <div class="row">
                     @foreach ($subcategory as $subcategorys)

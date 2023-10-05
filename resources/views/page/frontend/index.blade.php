@@ -2,9 +2,8 @@
 
 @section('content')
     <!--Main Slider Two Start-->
-    <section class="main-slider-two clearfix">
-        <div class="swiper-container thm-swiper__slider"
-            data-swiper-options='{"slidesPerView": 1, "loop": true,
+        <section class="main-slider-three clearfix">
+            <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
         "effect": "fade",
         "pagination": {
         "el": "#main-slider-pagination",
@@ -18,106 +17,79 @@
         "autoplay": {
         "delay": 5000
         }}'>
-            <div class="swiper-wrapper">
+                <div class="swiper-wrapper">
 
-                <div class="swiper-slide">
-                    {{-- <div class="main-slider__img">
-                        <img src="{{ asset('assets/frontend/images/resources/main-slider-2-1.png') }}" alt=""
-                            class="float-bob-y">
-                    </div> --}}
-                    <div class="main-slider-two__shape-1">
-                        <img src="{{ asset('assets/frontend/images/shapes/main-slider-two-shape-1.png') }}" alt="">
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-7">
-                                <div class="main-slider-two__content">
-                                    <h5 class="main-slider-two__sub-title">Welcome to ...</h5>
-                                    <h2 class="main-slider-two__title">MGR TRADES</h2>
-                                    <h4 class="main-slider-two__text-1">Your Trusted Source for Electrical and Plumbing
-                                        Product.</h4>
-                                    <div class="main-slider-two__btn-box" style="margin-top: 20px;">
-                                        <a href="https://api.whatsapp.com/send/?phone=%2B919994023234" target="_blank"
-                                            class="main-slider__btn thm-btn">Connect Now</a>
+                    <div class="swiper-slide">
+                        <div class="image-layer-three"
+                            style="background-image: url(assets/frontend/images/backgrounds/main-slider-3-1.jpg);"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-7"></div>
+                                <div class="col-xl-5">
+                                    <div class="main-slider-three__content">
+                                        <div class="main-slider-three__content-inner">
+                                            <div class="main-slider-three__title-box">
+                                                <span class="main-slider-three__tagline">Welcome to MGR Trades</span>
+                                                <h2 class="main-slider-three__title">Trusted And Reliable <br>
+                                                    Electrical Service</h2>
+                                            </div>
+                                            <p class="main-slider-three__text">When you're having electrical issues, we
+                                                know
+                                                how important it is <br> to have them resolved quickly, conveniently and
+                                                effectively.</p>
+                                            <div class="main-slider-three__btn-boxes">
+                                                <a href="{{ route('contact') }}" class="thm-btn main-slider-three__btn-1">Contact Us <span class="fas fa-arrow-right"></span></a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="main-slider-two__shape-2"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="swiper-slide">
-                    {{-- <div class="main-slider__img">
-                        <img src="{{ asset('assets/frontend/images/resources/main-slider-2-2.png') }}" alt=""
-                            class="float-bob-y">
-                    </div> --}}
-                    <div class="main-slider-two__shape-1">
-                        <img src="{{ asset('assets/frontend/images/shapes/main-slider-two-shape-1.png') }}" alt="">
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-7">
-                                <div class="main-slider-two__content">
-                                    <h5 class="main-slider-two__sub-title">Welcome to ...</h5>
-                                    <h2 class="main-slider-two__title">MGR TRADES</h2>
-                                    <h4 class="main-slider-two__text-1">Your Trusted Source for Electrical and Plumbing
-                                        Product.</h4>
-                                    <div class="main-slider-two__btn-box" style="margin-top: 20px;">
-                                        <a href="https://api.whatsapp.com/send/?phone=%2B919994023234" target="_blank"
-                                            class="main-slider__btn thm-btn">Connect Now</a>
+                    <div class="swiper-slide">
+                        <div class="image-layer-three"
+                            style="background-image: url(assets/frontend/images/backgrounds/main-slider-3-2.jpg);"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="main-slider-three__content main-slider-three__content-left">
+                                        <div class="main-slider-three__content-inner">
+                                            <div class="main-slider-three__title-box">
+                                                <span class="main-slider-three__tagline">providing 24/7 electrical
+                                                    service</span>
+                                                <h2 class="main-slider-three__title">We Are Available <br> At Your Door
+                                                    Step</h2>
+                                            </div>
+                                            <p class="main-slider-three__text">When you're having electrical issues, we
+                                                know
+                                                how important it is <br> to have them resolved quickly, conveniently and
+                                                effectively.</p>
+                                            <div class="main-slider-three__btn-boxes">
+                                                <a href="https://api.whatsapp.com/send/?phone=%2B919994023234" target="_blank" class="thm-btn main-slider-three__btn-2">Chat With Us<span class="fas fa-arrow-right"></span></a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="main-slider-two__shape-2"></div>
                                 </div>
+                                <div class="col-xl-6"></div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-
-                <div class="swiper-slide">
-                    {{-- <div class="main-slider__img">
-                        <img src="{{ asset('assets/frontend/images/resources/main-slider-2-1.png') }}" alt=""
-                            class="float-bob-y">
-                    </div> --}}
-                    <div class="main-slider-two__shape-1">
-                        <img src="{{ asset('assets/frontend/images/shapes/main-slider-two-shape-1.png') }}" alt="">
+                <!-- If we need navigation buttons -->
+                <div class="main-slider-three__nav">
+                    <div class="swiper-button-prev" id="main-slider__swiper-button-next">
+                        <i class="fa fa-arrow-left"></i>
                     </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-7">
-                                <div class="main-slider-two__content">
-                                    <h5 class="main-slider-two__sub-title">Welcome to ...</h5>
-                                    <h2 class="main-slider-two__title">MGR TRADES</h2>
-                                    <h4 class="main-slider-two__text-1">Your Trusted Source for Electrical and Plumbing
-                                        Product.</h4>
-                                    <div class="main-slider-two__btn-box" style="margin-top: 20px;">
-                                        <a href="https://api.whatsapp.com/send/?phone=%2B919994023234" target="_blank"
-                                            class="main-slider__btn thm-btn">Connect Now</a>
-                                    </div>
-                                    <div class="main-slider-two__shape-2"></div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="swiper-button-next" id="main-slider__swiper-button-prev">
+                        <i class="fa fa-arrow-right"></i>
                     </div>
                 </div>
+
 
             </div>
-
-            <!-- If we need navigation buttons -->
-            <div class="main-slider-two__nav">
-                <div class="swiper-button-prev" id="main-slider__swiper-button-next">
-                    <i class="fa fa-arrow-left"></i>
-                </div>
-                <div class="swiper-button-next" id="main-slider__swiper-button-prev">
-                    <i class="fa fa-arrow-right"></i>
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-    <!--Main Slider Two End-->
+        </section>
+        <!--Main Slider Two End-->
 
     <!--Services One Start-->
     <section class="services-three">

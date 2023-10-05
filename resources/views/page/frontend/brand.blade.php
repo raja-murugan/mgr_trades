@@ -3,7 +3,7 @@
 @section('content')
     <!--Page Header Start-->
     <section class="page-header">
-        <div class="page-header-bg" style="background-image: url(assets/frontend/images/backgrounds/page-header-bg-3.png);">
+        <div class="page-header-bg" style="background-image: url(assets/frontend/images/backgrounds/page-header-bg-4.png);">
         </div>
         <div class="container">
             <div class="page-header__inner">
@@ -34,7 +34,6 @@
                         <div class="col-xl-8 col-lg-7">
                             <div class="about-company__right">
                                 <div class="section-title text-left">
-                                    <span class="section-title__tagline">MGR Trades</span>
                                     <h2 class="section-title__title" style="font-size: 35px;">{{ $brands->name }}</h2>
                                 </div>
                                 <span class="about-company__text-2" style="text-align: justify;">{!! $brands->note !!}.</span>
