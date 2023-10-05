@@ -8986,6 +8986,7 @@ ul {
   display: block;
   padding: 205px 0 131px;
   background-color: #424e5e;
+  /* background-color: #081037; */
   overflow: hidden;
   z-index: 1;
 }
@@ -9000,7 +9001,7 @@ ul {
   background-position: top center;
   background-size: cover;
   mix-blend-mode: hard-light;
-  opacity: 0.50;
+  /* opacity: 0.50; */
   z-index: -1;
 }
 

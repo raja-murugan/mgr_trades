@@ -3,7 +3,7 @@
 @section('content')
     <!--Page Header Start-->
     <section class="page-header">
-        <div class="page-header-bg" style="background-image: url(assets/frontend/images/backgrounds/page-header-bg-4.png);">
+        <div class="page-header-bg" style="background-image: url(assets/frontend/images/backgrounds/page-header-bg-3.png);">
         </div>
         <div class="container">
             <div class="page-header__inner">
