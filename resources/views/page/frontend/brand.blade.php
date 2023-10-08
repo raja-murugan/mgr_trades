@@ -60,7 +60,7 @@
                                         <a href="{{ route('product.details', ['id' => $categoryies->id]) }}">
                                             <div class="">
                                                 <p class="about-company__text-4" style="font-size: 20px;font-weight: 700;">{{ $categoryies->name }}</p>
-                                                <div style="font-size: 20px;">{!! $categoryies->note !!}</div>
+                                                <div style="font-size: 15px;">{!! $categoryies->note !!}</div>
                                             </div>
                                         </a>
                                     </div>
