@@ -19,9 +19,8 @@
         }}'>
                 <div class="swiper-wrapper">
 
-                    <div class="swiper-slide">
-                        <div class="image-layer-three"
-                            style="background-image: url(assets/frontend/images/backgrounds/main-slider-3-1.jpg);"></div>
+                    <div class="swiper-slide" style="background-image: url(assets/frontend/images/backgrounds/main-slider-3-1.jpg);">
+                        <div class="image-layer-three"></div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-xl-7"></div>
@@ -44,9 +43,9 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide">
-                        <div class="image-layer-three"
-                            style="background-image: url(assets/frontend/images/backgrounds/main-slider-3-2.jpg);"></div>
+                    <div class="swiper-slide"
+                    style="background-image: url(assets/frontend/images/backgrounds/main-slider-3-2.jpg);">
+                        <div class="image-layer-three"></div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-xl-6">
@@ -356,7 +355,7 @@
                                         <span class="fa fa-arrow-right"></span>
                                     </div>
                                     <div class="text">
-                                        <p>Exclusive Sudhakar Products in Trichy.</p>
+                                        <p>Exclusive SUDHAKAR PRODUCTS in Trichy.</p>
                                     </div>
                                 </li>
                             </ul>
@@ -403,7 +402,7 @@
                             <div class="why-choose-one__content">
                                 <h3 class="why-choose-one__title"><a href="about.html">Setting Standards</a></h3>
                                 <p class="why-choose-one__text-2">We lead in innovation and quality, continuously raising
-                                    the bar and redefining industry standards.
+                                    the bar and redefining ISI standards.
                                 </p>
                             </div>
                         </div>
@@ -428,9 +427,9 @@
                             <span class="section-title__tagline">testimonials</span>
                             <h2 class="section-title__title">What They Say
                                 About Our
-                                Service</h2>
+                                Product</h2>
                         </div>
-                        <p class="testimonial-one__text">We provide the hightest- quality <br> service to our
+                        <p class="testimonial-one__text">We provide the hightest- quality <br> product to our
                             customers.
                         </p>
                     </div>

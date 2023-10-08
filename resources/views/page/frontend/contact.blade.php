@@ -72,7 +72,7 @@
                                 </div>
                                 <div class="content">
                                     <h4>Address :</h4>
-                                    <p>48, CKP Garden, Kallanai Road, Thiruverumbur, Tiruchirappalli - 620013</p>
+                                    <p><a href="https://maps.app.goo.gl/RuBSVgUBLdt5a5VU7">48, CKP Garden, Kallanai Road, Thiruverumbur, Tiruchirappalli - 620013</a></p>
                                 </div>
                             </li>
                             <li>
